@@ -11,24 +11,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarea: el CV</title>
+    <link rel="icon" type="image/x-icon" href=".\imagenes\favicon.ico">
     <style>
-        * {
-            box-sizing: border-box;
-            
+        p {
+            border: 5px solid powderblue;
+            background-color: darkgrey;
+            padding: 5px;
 
+        }
+
+        #perfil profesional{
+            width: 320px;
+            padding: 10px;
+            border: 5px solid gray;
+            margin: 0;
         }
 
         div {
             margin: 1vh;
             padding-top: 1vh;
             padding-bottom: 1vh;
+            overflow: hidden;
         }
 
 
         h1 {
             text-align: center;
-            color: rgb(43, 236, 14);
-            background-color: rgb(210, 26, 26);
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            margin-left: 50%;
+
 
         }
 
@@ -38,17 +50,24 @@
         }
 
         h3 {
+            background-color: aliceblue;
             text-align: center;
         }
 
 
         body {
-            background-color: rgb(195, 248, 228);
+            background-color: rgb(233, 250, 243);
+        }
+
+
+        #nombre {
+            text-align: center;
+
+
         }
 
         #enlinea {
             display: inline;
-            width: 300px;
             padding: 50px;
             margin: 20px;
         }
@@ -64,13 +83,14 @@
         }
 
         #bloquelinea2 {
-
+            display: inline-block;
             width: 45%;
             height: 320px;
             padding: 5px;
             border: 1px solid blue;
             background-color: yellow;
-            float: right;
+            margin-left: 900px;
+
         }
 
         #caja {
@@ -85,16 +105,20 @@
 </head>
 
 <body>
-    <div>
+    <div id="nombre">
         <h1>
-            <main>Mi CV<main>
+            <main>Álvaro Ariza Ortiz<main>
         </h1>
-        <h2>Álvaro Ariza Ortiz</h2>
-        <center><img src=".\imagenes\dogwork.gif" alt="perro trabajo"></center>
-        <p style="text-align:center" ;><mark>Intento de</mark> <i>Programador Web</i></p>
-        <p style="text-align:center"><a target=_blank href=".\index.html">PINCHE AQUÍ PARA VOLVER AL ÍNDICE</a></p>
-        <hr />
     </div>
+
+    <div id="perfil profesinal">
+        <center><img src=".\imagenes\dogwork.gif" width="350" height="263" alt="perro trabajo"></center>
+        <p><mark>Intento de</mark>Programador Web</p>
+    </div>
+
+    <p style="text-align:center"><a target=_blank href=".\index.html">PINCHE AQUÍ PARA VOLVER AL ÍNDICE</a></p>
+    <hr />
+
 
     <div id="enlinea">
         <h3>
@@ -141,7 +165,9 @@
             <article>Educación</article>
         </h3>
         <p>
-        <section>He estudiado en:</section>
+        <section>
+            He estudiado en:
+        </section>
         </p>
         <p>Grado Superior en Desarrollo de Aplicaciones Web</p>
         <p>CENEC Málaga</p>
