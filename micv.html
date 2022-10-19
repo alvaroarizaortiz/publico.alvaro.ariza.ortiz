@@ -2,7 +2,7 @@
 <html lang="es">
 <!-- 
 	Autor: Álvaro Ariza 
-	Fecha: 14/10/2022
+	Fecha: 14/10/2022-19/10/2022
 	Trabajo sobre CV y uso de elementos en HTML.
 	-->
 
@@ -12,44 +12,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarea: el CV</title>
     <style>
+        * {
+            box-sizing: border-box;
+            
+
+        }
+
+        div {
+            margin: 1vh;
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+        }
+
+
+        h1 {
+            text-align: center;
+            color: rgb(43, 236, 14);
+            background-color: rgb(210, 26, 26);
+
+        }
+
+        h2 {
+            text-align: center;
+            font-family: cursive;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+
         body {
             background-color: rgb(195, 248, 228);
         }
 
-        #caja {
+        #enlinea {
+            display: inline;
             width: 300px;
-            border: 15px solid rgb(177, 44, 207);
             padding: 50px;
             margin: 20px;
+        }
 
+        #bloquelinea {
+            display: inline-block;
+            width: 45%;
+            height: 320px;
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: yellow;
+
+        }
+
+        #bloquelinea2 {
+
+            width: 45%;
+            height: 320px;
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: yellow;
+            float: right;
+        }
+
+        #caja {
+            display: block;
+            width: 400px;
+            border: 20px solid rgb(177, 44, 207);
+            padding: 50px;
+            margin: 20px;
+            background-color: aliceblue;
         }
     </style>
 </head>
 
 <body>
     <div>
-        <h1 style="text-align:center">Mi CV</h1>
-        <p style="text-align:center">Álvaro Ariza Ortiz</p>
-        <p style="text-align:center" ;><mark>(Intento de)</mark> Programador Web</p>
+        <h1>
+            <main>Mi CV<main>
+        </h1>
+        <h2>Álvaro Ariza Ortiz</h2>
+        <center><img src=".\imagenes\dogwork.gif" alt="perro trabajo"></center>
+        <p style="text-align:center" ;><mark>Intento de</mark> <i>Programador Web</i></p>
+        <p style="text-align:center"><a target=_blank href=".\index.html">PINCHE AQUÍ PARA VOLVER AL ÍNDICE</a></p>
         <hr />
     </div>
 
-    <h4 style="margin-left: 1%;">Perfil Profesional</h4>
-    <p>Estudiante de Desarrollo de Aplicaciones Multimedia en CENEC Málaga. Para poder pagar
-        mis estudios he trabajado a la vez que estudiaba el Grado en Historia por la Universidad de Málaga. Esto creo
-        que me ha formado como persona y me ha animado a estudiar algo que de verdad me motiva. Espero tener la
-        obligación de completar esta parte del Currículum después de terminar los estudios aquí.</p>
+    <div id="enlinea">
+        <h3>
+            <article>Perfil Profesional</article>
+        </h3>
+        <p>
+        <section>Estudiante de Desarrollo de Aplicaciones Multimedia en CENEC Málaga. Para poder pagar
+            mis estudios he trabajado a la vez que estudiaba el Grado en Historia por la Universidad de Málaga. Esto
+            creo
+            que me ha formado como persona y me ha animado a estudiar algo que de verdad me motiva. Espero tener la
+            obligación de completar esta parte del Currículum después de terminar los estudios aquí.</section>
+        </p>
+    </div>
 
-    <h4 style="margin-left: 1%;">Experiencia Laboral</h4>
-    <p>No poseo experiencia laboral en el sector pero he trabajo para poder ganar mis estudios en:</p>
-    <ul>
-        <li> Hostelería en la ciudad de Málaga</li>
-        <li> Recogida de la aceituna por los pueblos de la provincia de Málaga</li>
-    </ul>
+    <div id="bloquelinea">
+        <h3>
+            <article> Experiencia Laboral</article>
+        </h3>
+        <p>
+        <section> No poseo experiencia laboral en el sector pero he trabajo para poder ganar mis estudios en:</section>
+        </p>
+        <ul>
+            <li> Hostelería en la ciudad de Málaga</li>
+            <li> Recogida de la aceituna por los pueblos de la provincia de Málaga</li>
+        </ul>
 
-    <h4 style="margin-left: 1%;">Educación</h4>
+
+        <div id="bloquelinea2">
+            <h3>
+                <article>Aptitudes</article>
+            </h3>
+            <ol>
+                <li>Trabajo en equipo</li>
+                <li>Buen comunicador</li>
+                <li>Aprendizaje rápido</li>
+                <li>Gran capacidad para resolver problemas</li>
+                <li>Iniciativa</li>
+            </ol>
+        </div>
+    </div>
+
     <div id="caja">
-        <p style="color:rgb(255, 0, 0);margin-left: 88px;"> He estudiado en:</p>
+        <h3>
+            <article>Educación</article>
+        </h3>
+        <p>
+        <section>He estudiado en:</section>
+        </p>
         <p>Grado Superior en Desarrollo de Aplicaciones Web</p>
         <p>CENEC Málaga</p>
         <p>Actualidad- (?)</p>
@@ -64,6 +157,8 @@
         <p>Septiembre de 2013 - Septiembre de 2015</p>
 
     </div>
-</body>
+
+
+
 
 </html>
