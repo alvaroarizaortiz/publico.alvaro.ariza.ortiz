@@ -1,190 +1,191 @@
 <!DOCTYPE html>
 <html lang="es">
 <!-- 
-	Autor: Álvaro Ariza 
-	Fecha: 14/10/2022-19/10/2022
+	Autor: Álvaro Ariza Ortiz - 1DAM
+	Fecha: 14/10/2022-20/10/2022
 	Trabajo sobre CV y uso de elementos en HTML.
+    He intentado usar todo lo posible y darle un estilo graciosete dentro de mis limitaciones.
 	-->
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarea: el CV</title>
-    <link rel="icon" type="image/x-icon" href=".\imagenes\favicon.ico">
+    <title>Currículum</title>
     <style>
-        p {
-            border: 5px solid rgb(17, 17, 17);
-            background-color: darkgrey;
-            padding: 5px;
-
+        body {
+            background-image: url(https://img.freepik.com/vector-premium/esqueletos-divertidos-fondo-transparente_332375-62.jpg?w=2000);
         }
 
         img {
-            border-radius: 10%;
+            width: 250px;
+            height: 300px;
 
         }
 
-        #perfil profesional {
-            display: inline-block;
-            width: 320px;
-            padding: 10px;
-            border: 5px solid gray;
-            margin: 0;
+        #imagen {
+            float: left;
+
         }
 
-        div {
-            margin: 1vh;
-            padding-top: 1vh;
-            padding-bottom: 1vh;
-            overflow: hidden;
+        #invertida {
+            transform: scaleX(-1)
         }
 
+        #contenedor {
+            width: 42vw;
+            height: 93vh;
+            border: rgb(225, 0, 255) 7px dashed;
+
+            text-align: center;
+            margin: auto;
+            padding: 1px;
+            margin-top: 25px;
+
+        }
+
+        #primeracaja {
+            background-color: rgb(255, 255, 255);
+            width: 42vw;
+            height: 31vh;
+            float: left;
+
+        }
+
+        #segundacaja {
+            background-color: rgb(245, 73, 82);
+            width: 42vw;
+            height: 25vh;
+            float: left;
+
+
+        }
+
+        #terceracaja {
+            background-color: rgb(219, 252, 76);
+            width: 21vw;
+            height: 37vh;
+            float: left;
+
+
+        }
+
+        #cuartacaja {
+            background-color: rgb(216, 140, 54);
+            width: 21vw;
+            height: 37vh;
+            float: left;
+
+
+        }
+
+        span {
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        #texto1 {
+            float: left;
+        }
+
+        #texto2 {
+            padding: 15px;
+        }
+        
+        #texto2-1{
+            padding: 15px;
+        }
 
         h1 {
+            font-family: system-ui;
+            background-color: rgb(0, 247, 255);
+
+        }
+
+        ul {
             text-align: center;
-            color: rgb(255, 255, 255);
-            background-color: rgb(0, 0, 0);
-            margin-left: 50%;
+            list-style-position: inside;
+            font-size: 20px;
+        }
 
+        ol {
+            font-size: 20px;
 
         }
 
-        h2 {
-            text-align: center;
-            font-family: cursive;
+        a {
+            font-size: x-large
         }
 
-        h3 {
-            background-color: aliceblue;
-            text-align: center;
+        p {
+            font-size: 22px;
         }
-
-
-        body {
-            background-color: rgb(233, 250, 243);
-        }
-
-
-        #enlinea {
-            display: inline;
-            padding: 50px;
-            margin: 20px;
-        }
-
-        #bloquelinea {
-            display: inline-block;
-            width: 45%;
-            height: 320px;
-            padding: 5px;
-            border: 1px solid blue;
-            background-color: yellow;
-
-        }
-
-        #bloquelinea2 {
-            display: inline-block;
-            width: 45%;
-            height: 320px;
-            padding: 5px;
-            border: 1px solid blue;
-            background-color: yellow;
-            margin-left: 900px;
-
-        }
-
-        #caja {
-            display: block;
-            width: 400px;
-            border: 20px solid rgb(177, 44, 207);
-            padding: 50px;
-            margin: 20px;
-            background-color: aliceblue;
-        }
+        
     </style>
 </head>
 
 <body>
     <main>
-        <h1>
-            Álvaro Ariza Ortiz
-        </h1>
-    
-    <div id="perfil profesinal">
-        <center><img src=".\imagenes\dogwork.gif" width="350" height="263" alt="perro trabajo"></center>
-        <p><mark>Intento de</mark>Programador Web</p>
-    </div>
 
-    <p style="text-align:center"><a target=_blank href=".\index.html">PINCHE AQUÍ PARA VOLVER AL ÍNDICE</a></p>
-    <hr />
-    </main>
+        <div id="contenedor">
+            <div id="primeracaja">
+                <div id="imagen"><img id="invertida" src=".\imagenes\avatar.gif" alt="esqueleto trompeta"></div>
+                <div id="texto1">
+                    <h1>Álvaro Ariza Ortiz</h1>
+                    <p><mark>Intento de</mark> programador Web</p>
+                    <p>◀───── mi cerebro ─────▶</p>
+                    <p> programando en html</p>
+                </div>
+                <div id="imagen"><img src=".\imagenes\avatar.gif" alt="esqueleto trompeta2"></div>
+            </div>
 
+            <section>
+                <div id="segundacaja">
+                    <div id="texto2">
+                        <h2><span>FORMACIÓN</span></h2>
+                        <h3>📖He estudiado en:📖</h3>
+                        <ul>
+                            <li>Grado Superior en Desarrollo de Aplicaciones Web en CENEC, Málaga (Actualidad)</li>
+                            <li>Hasta 4º en el Grado de Historia por la Universidad de Málaga (2016-2021)</li>
+                            <li>Bachillerato de Ciencias Sociales en IES Nuevo Scala de Rute (2013-2015)</li>
+                        </ul>
+                    </div>
 
-    <div id="enlinea">
-        <h3>
-            <article>Perfil Profesional</article>
-        </h3>
-        <p>
-        <section>Estudiante de Desarrollo de Aplicaciones Multimedia en CENEC Málaga. Para poder pagar
-            mis estudios he trabajado a la vez que estudiaba el Grado en Historia por la Universidad de Málaga. Esto
-            creo
-            que me ha formado como persona y me ha animado a estudiar algo que de verdad me motiva. Espero tener la
-            obligación de completar esta parte del Currículum después de terminar los estudios aquí.</section>
-        </p>
-    </div>
+                </div>
+                <div id="cuartacaja">
+                    <h2><span>APTITUDES</span></h2>
+                    <div id="texto2-1">
+                        <ol>
+                            <li>Trabajo en equipo</li>
+                            <li>Buen comunicador</li>
+                            <li>Aprendizaje rápido</li>
+                            <li>Gran capacidad para resolver problemas</li>
+                            <li>Iniciativa</li>
+                            <li>Gran interés por hacer un buen trabajo</li>
+                            <li>No me importaría trabajar un lunes</li>
+                        </ol>
+                    </div>
+                </div>
 
-    <div id="bloquelinea">
-        <h3>
-            <article> Experiencia Laboral</article>
-        </h3>
-        <p>
-        <section> No poseo experiencia laboral en el sector pero he trabajo para poder ganar mis estudios en:</section>
-        </p>
-        <ul>
-            <li> Hostelería en la ciudad de Málaga</li>
-            <li> Recogida de la aceituna por los pueblos de la provincia de Málaga</li>
-        </ul>
+            </section>
 
-
-        <div id="bloquelinea2">
-            <h3>
-                <article>Aptitudes</article>
-            </h3>
-            <ol>
-                <li>Trabajo en equipo</li>
-                <li>Buen comunicador</li>
-                <li>Aprendizaje rápido</li>
-                <li>Gran capacidad para resolver problemas</li>
-                <li>Iniciativa</li>
-            </ol>
+            <section>
+                <div id="terceracaja">
+                    <div id="texto3">
+                        <h2><span>CONTACTO</span></h2>
+                        <h3>Contacta conmigo a través de:</h3>
+                        <p>📩e-mail: correoinventado@gmail.com</p>
+                        <p>📲Teléfono móvil: (+34)696696696</p>
+                        <p>Linkedin: no tengo, ya tendré cuando nos creemos un perfil en clase</p>
+                    </div>
+                </div>
+            </section>
         </div>
-    </div>
-
-    <div id="caja">
-        <h3>
-            <article>Educación</article>
-        </h3>
-        <p>
-        <section>
-            He estudiado en:
-        </section>
-        </p>
-        <p>Grado Superior en Desarrollo de Aplicaciones Web</p>
-        <p>CENEC Málaga</p>
-        <p>Actualidad- (?)</p>
-        <hr />
-
-        <p>Hasta 4º en el Grado de Historia</p>
-        <p>Universidad de Málaga</p>
-        <hr />
-
-        <p>Bachillerato de Ciencias Sociales</p>
-        <p>IES Nuevo Scala de Rute</p>
-        <p>Septiembre de 2013 - Septiembre de 2015</p>
-
-    </div>
-
-
-
+        <footer>
+            <nav>
+                <a target=_blank href=".\index.html"><span>PULSE AQUÍ PARA VOLVER AL ÍNDICE</span></a>
+            </nav>
+        </footer>
+    </main>
+</body>
 
 </html>
