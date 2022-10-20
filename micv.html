@@ -6,6 +6,7 @@
 	Trabajo sobre CV y uso de elementos en HTML.
     He intentado usar todo lo posible y darle un estilo graciosete dentro de mis limitaciones.
     Temática Halloween ya que casi estamos en esa época del año.
+    He intentado poner todo en vh,vw o % pero no se hacerla responsive así que al hacerla más pequeña se estropea muy fácilmente.
 	-->
 <head>
     <meta charset="UTF-8">
@@ -19,7 +20,7 @@
         }
 
         img {
-            width: 13vw;
+            width: 15vw;
             height: 25vh;
         }
 
@@ -35,7 +36,6 @@
             width: 42vw;
             height: 93vh;
             border: rgb(225, 0, 255) 7px dashed;
-
             text-align: center;
             margin: auto;
             
@@ -44,8 +44,10 @@
         #primeracaja {
             background-color: rgb(255, 255, 255);
             width: 42vw;
-            height: 29vh;
+            height: 25vh;
             float: left; 
+            
+           
         }
 
         #segundacaja {
@@ -58,14 +60,14 @@
         #terceracaja {
             background-color: rgb(206, 238, 62);
             width: 21vw;
-            height: 37vh;
+            height: 41vh;
             float: left;
         }
 
         #cuartacaja {
             background-color: rgb(231, 144, 45);
             width: 21vw;
-            height: 37vh;
+            height: 41vh;
             float: left;
         }
 
@@ -75,7 +77,7 @@
 
         #texto1 {
             float: left;
-            display: block;  
+            display: inline; 
             
         }
 
@@ -96,12 +98,12 @@
         ul {
             text-align: center;
             list-style-position: inside;
-            font-size: 18px;
+            font-size: 17px;
             display: inline;
         }
 
         ol {
-            font-size: 18px;
+            font-size: 17px;
             display: inline-block;
         }
 
@@ -110,7 +112,7 @@
         }
 
         p {
-            font-size: 18px;
+            font-size: 17px;
         }   
     </style>
 </head>
@@ -123,10 +125,10 @@
                 <div id="texto1">
                     <h1>Álvaro Ariza Ortiz</h1>
                     <p><mark>Intento de</mark> programador Web</p>
-                    <p>◀───── <i> mi cerebro </i> ─────▶</p>
+                    <p>◀───── <i> mi cerebro </i> </p>
                     <p> programando en <b>html</b></p>   
                 </div>
-                <div id="imagen"><img src=".\imagenes\avatar.gif" alt="esqueleto trompeta2"></div>
+               
             </div>
 
             <section>
