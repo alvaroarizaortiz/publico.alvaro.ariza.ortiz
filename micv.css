@@ -1,0 +1,99 @@
+body {
+    background-image: url(https://img.freepik.com/vector-premium/esqueletos-divertidos-fondo-transparente_332375-62.jpg?w=2000);
+}
+
+img {
+    width: 15vw;
+    height: 25vh;
+}
+
+#imagen {
+    float: left;
+}
+
+#invertida {
+    transform: scaleX(-1)
+}
+
+#contenedor {
+    width: 42vw;
+    height: 93vh;
+    border: rgb(225, 0, 255) 7px dashed;
+    text-align: center;
+    margin: auto;
+
+}
+
+#primeracaja {
+    background-color: rgb(255, 255, 255);
+    width: 42vw;
+    height: 25vh;
+    float: left;
+
+
+}
+
+#segundacaja {
+    background-color: rgb(250, 101, 109);
+    width: 42vw;
+    height: 27vh;
+    float: left;
+}
+
+#terceracaja {
+    background-color: rgb(206, 238, 62);
+    width: 21vw;
+    height: 41vh;
+    float: left;
+}
+
+#cuartacaja {
+    background-color: rgb(231, 144, 45);
+    width: 21vw;
+    height: 41vh;
+    float: left;
+}
+
+span {
+    background-color: rgb(255, 255, 255);
+}
+
+#texto1 {
+    float: left;
+    display: inline;
+
+}
+
+#texto2 {
+    padding: 1vh;
+    display: block;
+}
+
+#texto2-1 {
+    display: block;
+}
+
+h1 {
+    font-family: system-ui;
+    background-color: rgb(0, 247, 255);
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+    font-size: 17px;
+    display: inline;
+}
+
+ol {
+    font-size: 17px;
+    display: inline-block;
+}
+
+a {
+    font-size: x-large;
+}
+
+p {
+    font-size: 17px;
+}
