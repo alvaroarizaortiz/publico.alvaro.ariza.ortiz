@@ -1,0 +1,77 @@
+    /* Estilo border-box */
+* {
+    box-sizing: border-box;
+  }
+
+  /* Color de fondo y espaciado de todo el body */
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    
+  }
+    /* Le damos resolución máxima a la pantalla, si minimiza será responsive */
+  .main {
+    max-width: 1280px;
+    margin: auto;
+  }
+
+    /* Cambiamos el tamaño y la fuente de h1 */
+  h1 {
+    font-size: 50px;
+    font-family: Brush Script MT;
+  }
+
+    /* Cambiamos el tamaño y la fuente de p */
+  p {
+    font-size: 16px;
+    font-family:  Helvetica;
+  }
+  
+    /* Esto deja la línea justo debajo del h1 */
+  hr{ 
+    margin-top: -2%; 
+  }
+
+    /* Espacio entre líneas */
+  .row {
+    margin: 8px -16px;
+  }
+  
+    /* Añadimos separación entre las columnas de imagénes */
+  .row,
+  .row > .column {
+    padding: 10px;
+  }
+  
+    /* Crea 4 columnas con un 25% de width cada una */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+    /* Esto ayuda a que el fondo blanco de las cajas de imágenes y texto no se fusione con el de al lado usando un espacio en blanco */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+    /* Fondo blanco de las cajas y espaciado entre la imagen y la última palabra */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+    /* Esto transforma las imágenes y las hace responsive para cuando se toque la pantalla y hacemos width 50% para que se ponga en 2 columnas en vez de en una solo */
+  @media screen and (max-width: 1280px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+    /* Esto transforma las imágenes  y las hace responsive para que al pasar de cierta px se transforme en una columna con una foto, por eso el width 100% */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
