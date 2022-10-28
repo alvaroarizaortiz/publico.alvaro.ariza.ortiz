@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi portfolio</title>
     <link href="./portfolio1.css" rel="stylesheet">
+    <script src="intense.min.js"></script>
     <style></style>
+
 </head>
 
 <body>
@@ -17,13 +19,15 @@
         <hr>
         <h2>PORTFOLIO</h2>
         <p>Primera prueba en HTML para ir cambiando cosas en un portfolio usando CSS</p>
-    <!-- FINAL TÍTULO PÁGINA-->
-    
+        <!-- FINAL TÍTULO PÁGINA-->
+
+
         <!-- PRINCIPIO DEL PORTFOLIO EN COLUMNA -->
         <div class="row">
             <div class="column">
                 <div class="content">
-                    <img src=".\portfolio\1.jpg" alt="primer paso" style="width:100%">
+                    <img src=".\portfolio\1.jpg" data-title="Hola" data-caption="esto es una prueba" alt="primer paso"
+                        loading="lazy" style="width:100%" class="intense">
                     <h3>Calle 1</h3>
                     <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
                         oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
@@ -31,7 +35,7 @@
             </div>
             <div class="column">
                 <div class="content">
-                    <img src=".\portfolio\2.jpg" alt="segundo paso" style="width:100%">
+                    <img src=".\portfolio\2.jpg" alt="segundo paso" loading="lazy" style="width:100%" class="intense">
                     <h3>Calle 2</h3>
                     <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
                         oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
@@ -39,7 +43,7 @@
             </div>
             <div class="column">
                 <div class="content">
-                    <img src=".\portfolio\3.jpg" alt="tercer paso" style="width:100%">
+                    <img src=".\portfolio\3.jpg" alt="tercer paso" loading="lazy" style="width:100%" class="intense">
                     <h3>Calle 3</h3>
                     <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
                         oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
@@ -47,7 +51,7 @@
             </div>
             <div class="column">
                 <div class="content">
-                    <img src=".\portfolio\4.jpg" alt="otra calle" style="width:100%">
+                    <img src=".\portfolio\4.jpg" alt="otra calle" loading="lazy" style="width:100%" class="intense">
                     <h3>Más calle</h3>
                     <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas
                         oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
@@ -58,16 +62,22 @@
 
         <!-- IMAGEN GRANDE-->
         <div class="content">
-            <img src=".\portfolio\5.jpg" alt="Death" style="width:100%">
+            <img src=".\portfolio\5.jpg" alt="Death" loading="lazy" style="width:100%" class="intense">
             <h3>Death</h3>
             <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat
                 nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
             <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat
                 nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
         </div>
-
         <!-- FINAL DE LA IMAGEN GRANDE -->
     </div>
+
+    <script>
+        window.onload = function () {
+            var elements = document.querySelectorAll('.intense');
+            Intense(elements);
+        }
+    </script>
 
 </body>
 
