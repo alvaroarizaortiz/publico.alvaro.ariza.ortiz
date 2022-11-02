@@ -3,6 +3,10 @@
     box-sizing: border-box;
   }
 
+  .banner {
+    
+  }
+
   /* Color de fondo y espaciado de todo el body */
   body {
     background-color: #f1f1f1;
