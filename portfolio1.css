@@ -2,9 +2,11 @@
 * {
     box-sizing: border-box;
   }
-
+  
   .banner {
-    
+    width: 20vh;
+    height: 20vh;
+
   }
 
   /* Color de fondo y espaciado de todo el body */
