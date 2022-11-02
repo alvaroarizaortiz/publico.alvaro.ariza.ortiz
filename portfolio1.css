@@ -1,112 +1,312 @@
     /* Estilo border-box */
-* {
-    box-sizing: border-box;
-  }
-
-  .banner {
-    width: 100%;
-    height: 30%;
+    * {
+      box-sizing: border-box;
     }
 
-  .banner .instagram {
-    position: absolute;
-    top: 24%;
-    left: 75%;
-    font-family: Brush Script MT;
-    font-size: 33px;
-    background-color: #b6bba5;
-    padding: 10px;
-    border: 2px;
-    border-radius:50px;
-    align-items: center;
-    cursor: pointer;
-  }
+    /* Color de fondo y espaciado de todo el body */
+    body {
+      background-color: #f1f1f1;
+      padding: 20px;
 
-  .banner .email {
-    position: absolute;
-    top: 24%;
-    right: 75%;
-    font-family: Brush Script MT;
-    font-size: 33px;
-    background-color: #b6bba5;
-    padding: 10px;
-    border: 2px;
-    border-radius:50px;
-    align-items: center;
-    cursor: pointer;
-  }
+    }
 
-  .banner .h1 {
-    position: absolute;
-    top: 23%;
-  }
-    
+    @font-face {
+      font-family: 'Pacifico';
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/pacifico/v22/FwZY7-Qmy14u9lezJ-6H6Mk.woff2) format('woff2');
+    }
 
-  /* Color de fondo y espaciado de todo el body */
-  body {
-    background-color: #f1f1f1;
-    padding: 20px;
-    
-  }
+    /* Imagen de banner responsive */
+    .banner {
+      width: 100%;
+      height: 30%;
+    }
+
+    /* Botón de instagram dentro del banner.em usa el font-size del botón */
+    .banner .instagram {
+      position: absolute;
+      background-color: #0ec91869;
+      font-family: Pacifico;
+      padding: 0.6em 1.3em;
+      font-weight: 900;
+      font-size: 18px;
+      border: 3px solid black;
+      border-radius: 0.4em;
+      box-shadow: 0.1em 0.1em;
+      top: 24%;
+      left: 70%;
+      width: 7em;
+      height: 5em;
+    }
+
+    /* como interactua el botón instagram al dejar el cursor encima, en este caso hacemos que se mueva y tenga algo de sombra. em usa el font-size del botón */
+    .instagram:hover {
+      transform: translate(-0.05em, -0.05em);
+      box-shadow: 0.15em 0.15em;
+    }
+
+    /* como interactua el botón instagram al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. em usa el font-size del botón */
+    .instagram:active {
+      transform: translate(0.05em, 0.05em);
+      box-shadow: 0.05em 0.05em;
+    }
+
+    /* Botón de email dentro del banner.em usa el font-size del botón */
+    .banner .email {
+      position: absolute;
+      background-color: #0ec91869;
+      font-family: Pacifico;
+      padding: 0.6em 1.3em;
+      font-weight: 900;
+      font-size: 18px;
+      border: 3px solid black;
+      border-radius: 0.4em;
+      box-shadow: 0.1em 0.1em;
+      top: 11%;
+      left: 71%;
+      width: 7em;
+      height: 5em;
+    }
+
+    /* como interactua el botón email al dejar el cursor encima, en este caso  hacemos que se mueva y tenga algo de sombra. em usa el font-size del botón */
+    .email:hover {
+      transform: translate(-0.05em, -0.05em);
+      box-shadow: 0.15em 0.15em;
+    }
+
+    /* como interactua el botón email al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. em usa el font-size del botón */
+    .email:active {
+      transform: translate(0.05em, 0.05em);
+      box-shadow: 0.05em 0.05em;
+    }
+
+    /* color del texto de los links sin pulsar */
+    a:link {
+      color: #6f0406;
+    }
+
+    /* color del texto de los links ya pulsados */
+    a:visited {
+      color: #6f0406;
+    }
+
+    /* color del texto de los links al dejar el cursor encima */
+    a:hover {
+      color: #ff7114
+    }
+
+    /* color del texto de los links justo al pulsarlos */
+    a:active {
+      color: #ff7114
+    }
 
     /* Le damos resolución máxima a la pantalla, si minimiza será responsive */
-  .main {
-    max-width: 1280px;
-    margin: auto;
-  }
+    .main {
+      max-width: 1280px;
+      margin: auto;
+    }
 
-    /* Cambiamos el tamaño y la fuente de h1 */
-  h1 {
-    font-size: 50px;
-    font-family: Brush Script MT;
-  }
+    /* Cambiamos el tamaño y la fuente de h1. La colocamos dentro del banner */
+    h1 {
+      position: absolute;
+      font-size: 50px;
+      font-family: Pacifico;
+      top: 13%;
+      left: 20%;
+    }
 
     /* Cambiamos el tamaño y la fuente de p */
-  p {
-    font-size: 16px;
-    font-family:  Helvetica;
-  }
-  
+    p {
+      font-size: 16px;
+      font-family: Helvetica;
+    }
+
+    /* movemos el segundo link del footer a la derecha */
+    .footerderecha {
+      float: right;
+    }
+
     /* Espacio entre líneas */
-  .row {
-    margin: 8px -16px;
-  }
-  
+    .row {
+      margin: 8px -16px;
+    }
+
     /* Añadimos separación entre las columnas de imagénes */
-  .row,
-  .row > .column {
-    padding: 10px;
-  }
-  
+    .row,
+    .row>.column {
+      padding: 10px;
+    }
+
     /* Crea 4 columnas con un 25% de width cada una */
-  .column {
-    float: left;
-    width: 25%;
-  }
-  
-    /* Esto ayuda a que el fondo blanco de las cajas de imágenes y texto no se fusione con el de al lado usando un espacio en blanco */ 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
+    .column {
+      float: left;
+      width: 25%;
+    }
+
+    /* Esto ayuda a que el fondo blanco de las cajas de imágenes y texto no se fusione con el de al lado usando un espacio en blanco */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
     /* Fondo blanco de las cajas y espaciado entre la imagen y la última palabra */
-  .content {
-    background-color: white;
-    padding: 10px;
-  }
-  
+    .content {
+      background-color: white;
+      padding: 10px;
+    }
+    
+    #arriba { 
+      display: none; /*esto oculta el botón por defecto hasta hacer el scroll mínimo establecido en el script */
+      font-family: Pacifico; /* fuente personalizada añadida al css */
+      background-color: #0ec91869; /* color de fondo */
+      position: fixed; /* esto hace que esté pegado a la posición */
+      bottom: 1%; /* esto hace que esté separado 20px del fondo de la página */
+      right: 2%;  /* esto hace que esté a 30 px de la derecha */
+      z-index: 99;  /* z-index hace que ningún elemento superponga esto. usamos 99 para que nada lo superponga*/
+      padding: 0.6em 1.3em; /* espaciado. usamos em para usar la font-size del botón */
+      font-weight: 900; /* cuerpo de la fuente */
+      font-size: 13px; /* tamaño fuente */
+      border: 3px solid black; /* borde */
+      border-radius: 0.4em; /* borde redondo usando em */ 
+      box-shadow: 0.1em 0.1em; /* sombra de la cajita del botón usando em */
+    }
+    
+    
+    /* como interactua el botón arriba al dejar el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. em usa el font-size del botón */
+    #arriba:hover {
+      transform: translate(-0.05em, -0.05em);
+      box-shadow: 0.15em 0.15em;
+    }
+
+    /* como interactua el botón arriba al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. em usa el font-size del botón */
+    .email:active {
+      transform: translate(0.05em, 0.05em);
+      box-shadow: 0.05em 0.05em;
+    }
+
     /* Esto transforma las imágenes y las hace responsive para cuando se toque la pantalla y hacemos width 50% para que se ponga en 2 columnas en vez de en una solo */
-  @media screen and (max-width: 1280px) {
-    .column {
-      width: 50%;
+    @media screen and (max-width: 1280px) {
+      .column {
+        width: 50%;
+      }
     }
-  }
-  
+
     /* Esto transforma las imágenes  y las hace responsive para que al pasar de cierta px se transforme en una columna con una foto, por eso el width 100% */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
     }
-  }
+
+    /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 1500px */
+    @media screen and (max-width: 1500px) {
+      h1 {
+        top: 4%;
+        left: 14%;
+        right: 70%;
+        font-size: 55px;
+
+      }
+    }
+
+    /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 1350px */
+    @media screen and (max-width: 1350px) {
+      .banner .instagram {
+        top: 17%;
+        left: 69%;
+        font-size: 15px;
+      }
+    }
+
+    @media screen and (max-width: 1350px) {
+      .banner .email {
+        top: 17%;
+        left: 83%;
+        font-size: 15px;
+      }
+
+      h1 {
+        top: 4%;
+        left: 14%;
+        right: 70%;
+        font-size: 55px;
+
+      }
+    }
+
+    /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 1000px */
+    @media screen and (max-width: 1000px) {
+      .banner .instagram {
+        top: 12%;
+        left: 69%;
+        font-size: 13px;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      .banner .email {
+        top: 12%;
+        left: 83%;
+        font-size: 13px;
+      }
+
+      h1 {
+        top: 4%;
+        left: 14%;
+        right: 70%;
+        font-size: 43px;
+
+      }
+    }
+
+    /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 700px */
+    @media screen and (max-width: 700px) {
+      .banner .instagram {
+        top: 9%;
+        left: 69%;
+        font-size: 9px;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      .banner .email {
+        top: 9%;
+        left: 83%;
+        font-size: 9px;
+      }
+
+      h1 {
+        top: 4%;
+        left: 14%;
+        right: 70%;
+        font-size: 30px;
+
+      }
+    }
+
+    /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 500px. NO LO BAJO DE 500 PX PORQUE A PARTIR DE 400 EXPLOTA, pero no creo que haya móvil de 400 ¿o sí?. */
+    @media screen and (max-width: 500px) {
+      .banner .instagram {
+        top: 4%;
+        left: 73%;
+        font-size: 8px;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .banner .email {
+        top: 9%;
+        left: 73%;
+        font-size: 8px;
+      }
+
+      h1 {
+        top: 4%;
+        left: 14%;
+        right: 70%;
+        font-size: 23px;
+
+      }
+    }
