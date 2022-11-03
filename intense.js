@@ -221,7 +221,7 @@ var Intense = (function() {
         fontSize: "40px",
         letterSpacing: "0.5px",
         lineHeight: "35px",
-        textAlign: "left"
+        textAlign: "left",
       };
       var captionTitle = document.createElement("h1");
       applyProperties(captionTitle, captionTitleProperties);

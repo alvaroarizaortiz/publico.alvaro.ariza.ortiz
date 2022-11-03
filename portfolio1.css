@@ -108,7 +108,7 @@
     }
 
     /* Cambiamos el tamaño y la fuente de h1. La colocamos dentro del banner */
-    h1 {
+    #titulo {
       position: absolute;
       font-size: 50px;
       font-family: Pacifico;
@@ -120,6 +120,21 @@
     p {
       font-size: 16px;
       font-family: Helvetica;
+    }
+
+    /* Cambiamos propiedades a la palabra portfolio que hemos introducido en el banner */
+    #titulo {
+      top: 7%;
+      left: 20%;
+      right: 70%;
+      font-size: 55px;
+
+    }
+
+    /* Cambiamos propiedades de h3 */
+    h3 {
+      text-align: center;
+      font-family: sans-serif;
     }
 
     /* movemos el segundo link del footer a la derecha */
@@ -156,24 +171,37 @@
       background-color: white;
       padding: 10px;
     }
-    
-    #arriba { 
-      display: none; /*esto oculta el botón por defecto hasta hacer el scroll mínimo establecido en el script */
-      font-family: Pacifico; /* fuente personalizada añadida al css */
-      background-color: #0ec91869; /* color de fondo */
-      position: fixed; /* esto hace que esté pegado a la posición */
-      bottom: 1%; /* esto hace que esté separado 20px del fondo de la página */
-      right: 2%;  /* esto hace que esté a 30 px de la derecha */
-      z-index: 99;  /* z-index hace que ningún elemento superponga esto. usamos 99 para que nada lo superponga*/
-      padding: 0.6em 1.3em; /* espaciado. usamos em para usar la font-size del botón */
-      font-weight: 900; /* cuerpo de la fuente */
-      font-size: 13px; /* tamaño fuente */
-      border: 3px solid black; /* borde */
-      border-radius: 0.4em; /* borde redondo usando em */ 
-      box-shadow: 0.1em 0.1em; /* sombra de la cajita del botón usando em */
+
+    #arriba {
+      display: none;
+      /*esto oculta el botón por defecto hasta hacer el scroll mínimo establecido en el script */
+      font-family: Pacifico;
+      /* fuente personalizada añadida al css */
+      background-color: #0ec91869;
+      /* color de fondo */
+      position: fixed;
+      /* esto hace que esté pegado a la posición */
+      bottom: 1%;
+      /* esto hace que esté separado 20px del fondo de la página */
+      right: 2%;
+      /* esto hace que esté a 30 px de la derecha */
+      z-index: 99;
+      /* z-index hace que ningún elemento superponga esto. usamos 99 para que nada lo superponga*/
+      padding: 0.6em 1.3em;
+      /* espaciado. usamos em para usar la font-size del botón */
+      font-weight: 900;
+      /* cuerpo de la fuente */
+      font-size: 13px;
+      /* tamaño fuente */
+      border: 3px solid black;
+      /* borde */
+      border-radius: 0.4em;
+      /* borde redondo usando em */
+      box-shadow: 0.1em 0.1em;
+      /* sombra de la cajita del botón usando em */
     }
-    
-    
+
+
     /* como interactua el botón arriba al dejar el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. em usa el font-size del botón */
     #arriba:hover {
       transform: translate(-0.05em, -0.05em);
@@ -202,7 +230,7 @@
 
     /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 1500px */
     @media screen and (max-width: 1500px) {
-      h1 {
+      #titulo {
         top: 4%;
         left: 14%;
         right: 70%;
@@ -226,14 +254,6 @@
         left: 83%;
         font-size: 15px;
       }
-
-      h1 {
-        top: 4%;
-        left: 14%;
-        right: 70%;
-        font-size: 55px;
-
-      }
     }
 
     /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 1000px */
@@ -252,7 +272,7 @@
         font-size: 13px;
       }
 
-      h1 {
+      #titulo {
         top: 4%;
         left: 14%;
         right: 70%;
@@ -277,7 +297,7 @@
         font-size: 9px;
       }
 
-      h1 {
+      #titulo {
         top: 4%;
         left: 14%;
         right: 70%;
@@ -302,7 +322,7 @@
         font-size: 8px;
       }
 
-      h1 {
+      #titulo {
         top: 4%;
         left: 14%;
         right: 70%;
