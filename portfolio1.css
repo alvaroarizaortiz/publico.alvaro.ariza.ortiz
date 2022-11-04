@@ -488,7 +488,7 @@
 
     @media screen and (max-width: 400px) {
       .banner .email { 
-        top: 8%;
+        top: 9%;
         left: 73%;
         font-size: 8px;
       }
