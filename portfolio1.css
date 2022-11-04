@@ -27,8 +27,8 @@
 
     /* Imagen de banner responsive con sus respectivos ancho y alto */
     .banner {
-      width: 100%;
-      height: 30%;
+      width: 100%; /* ancho del banner */
+      height: 30%; /* alto del banner */
     }
 
     /* Le damos resolución a la pantalla con sus bordes, si minimiza será responsive */
@@ -488,7 +488,7 @@
 
     @media screen and (max-width: 400px) {
       .banner .email { 
-        top: 9%;
+        top: 6%;
         left: 73%;
         font-size: 8px;
       }
