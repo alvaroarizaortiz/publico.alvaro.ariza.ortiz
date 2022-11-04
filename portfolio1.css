@@ -5,8 +5,10 @@
 
     /* Color de fondo y espaciado de todo el body */
     body {
-      background-color: #f1f1f1; /* color de fondo del body */
-      padding: 20px; /* espaciado */
+      background-color: #f1f1f1;
+      /* color de fondo del body */
+      padding: 20px;
+      /* espaciado */
     }
 
     /* Añadimos una fuente personalizada que usaré en el título y en los carteles */
@@ -31,7 +33,7 @@
 
     /* Le damos resolución a la pantalla con sus bordes, si minimiza será responsive */
     .main {
-      max-width: 1920px; 
+      max-width: 1280px;
       margin: auto;
     }
 
@@ -46,22 +48,30 @@
 
     /* Cambiamos el tamaño y la fuente de p */
     p {
-      font-size: 16px; /* tamaño de la fuente de p */
-      font-family: Helvetica; /* familia de la fuente de p */
+      font-size: 16px;
+      /* tamaño de la fuente de p */
+      font-family: Helvetica;
+      /* familia de la fuente de p */
     }
 
     /* Cambiamos propiedades a la palabra portfolio que hemos introducido en el banner */
     #titulo {
-      top: 7%; /* colocación por arriba */
-      left: 20%; /* colocación por la izquierda */
-      right: 70%; /* colocación por la derecha */
-      font-size: 55px; /* tamaño de la fuente del título */
+      top: 7%;
+      /* colocación por arriba */
+      left: 20%;
+      /* colocación por la izquierda */
+      right: 70%;
+      /* colocación por la derecha */
+      font-size: 55px;
+      /* tamaño de la fuente del título */
     }
 
     /* Cambiamos propiedades de h3 */
     h3 {
-      text-align: center; /* texto alineado al centro */
-      font-family: sans-serif; /* familia de la fuente del h3 */ 
+      text-align: center;
+      /* texto alineado al centro */
+      font-family: sans-serif;
+      /* familia de la fuente del h3 */
     }
 
     /* INICIO CSS DE LOS DISTINTOS BOTONES */
@@ -118,10 +128,13 @@
     .banner .email {
       position: absolute;
       /* usamos absolute para colocar el botón dentro del banner */
-      background-color: #0ec91869; /* color de fondo */
-      font-family: Pacifico;  /* usamos la fuente personalizada que añadimos antes */
-      padding: 0.6em 1.3em;  /* espaciado */
-      font-weight: 900; 
+      background-color: #0ec91869;
+      /* color de fondo */
+      font-family: Pacifico;
+      /* usamos la fuente personalizada que añadimos antes */
+      padding: 0.6em 1.3em;
+      /* espaciado */
+      font-weight: 900;
       font-size: 18px;
       border: 3px solid black;
       border-radius: 0.4em;
@@ -314,8 +327,49 @@
       }
     }
 
+    @media screen and (max-width: 1920px) {
+      .banner .instagram {
+        top: 6%;
+        left: 65%;
+        font-size: 15px;
+      }
+    }
+
+    @media screen and (max-width: 1920px) {
+      .banner .email {
+        top: 14%;
+        left: 70%;
+        font-size: 15px;
+      }
+    }
+
+    @media screen and (max-width: 1920px) {
+      #titulo {
+        top: 4%;
+        left: 25%;
+        right: 70%;
+        font-size: 55px;
+      }
+    }
+
     /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 1500px */
-    @media screen and (max-width: 1500px) {
+    @media screen and (max-width: 1550px) {
+      .banner .instagram {
+        top: 10%;
+        left: 69%;
+        font-size: 15px;
+      }
+    }
+
+    @media screen and (max-width: 1550px) {
+      .banner .email {
+        top: 10%;
+        left: 83%;
+        font-size: 15px;
+      }
+    }
+
+    @media screen and (max-width: 1550px) {
       #titulo {
         top: 4%;
         left: 14%;
@@ -325,26 +379,35 @@
     }
 
     /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 1350px */
-    @media screen and (max-width: 1350px) {
+    @media screen and (max-width: 1367px) {
       .banner .instagram {
-        top: 17%;
+        top: 6%;
         left: 69%;
         font-size: 15px;
       }
     }
 
-    @media screen and (max-width: 1350px) {
+    @media screen and (max-width: 1367px) {
       .banner .email {
-        top: 17%;
+        top: 10%;
         left: 83%;
         font-size: 15px;
+      }
+    }
+
+    @media screen and (max-width: 1367px) {
+      #titulo {
+        top: 4%;
+        left: 14%;
+        right: 70%;
+        font-size: 55px;
       }
     }
 
     /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 1000px */
     @media screen and (max-width: 1000px) {
       .banner .instagram {
-        top: 12%;
+        top: 8%;
         left: 69%;
         font-size: 13px;
       }
@@ -352,66 +415,66 @@
 
     @media screen and (max-width: 1000px) {
       .banner .email {
-        top: 12%;
+        top: 8%;
         left: 83%;
         font-size: 13px;
       }
 
       #titulo {
-        top: 4%;
+        top: 1.5%;
         left: 14%;
         right: 70%;
-        font-size: 43px;
+        font-size: 45px;
       }
     }
 
     /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 700px */
     @media screen and (max-width: 700px) {
       .banner .instagram {
-        top: 9%;
+        top: 5%;
         left: 69%;
-        font-size: 9px;
+        font-size: 10px;
       }
     }
 
     @media screen and (max-width: 700px) {
       .banner .email {
-        top: 9%;
+        top: 5%;
         left: 83%;
-        font-size: 9px;
+        font-size: 10px;
       }
 
       #titulo {
-        top: 4%;
+        top: 0.5%;
+        left: 14%;
+        right: 70%;
+        font-size: 35px;
+      }
+    }
+
+    /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 500px. 
+    No lo bajamos de 500 porque se mantiene bien hasta 400. */
+    @media screen and (max-width: 500px) {
+      .banner .instagram {
+        top: 3%;
+        left: 73%;
+        font-size: 8px;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .banner .email {
+        top: 6%;
+        left: 73%;
+        font-size: 8px;
+      }
+
+      #titulo {
+        top: 0.5%;
         left: 14%;
         right: 70%;
         font-size: 30px;
       }
     }
 
-    /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 500px. NO LO BAJO DE 500 PX PORQUE A PARTIR DE 400 EXPLOTA, pero no creo que haya móvil de 400 ¿o sí?. */
-    @media screen and (max-width: 500px) {
-      .banner .instagram {
-        top: 4%;
-        left: 73%;
-        font-size: 8px;
-      }
-    }
-
-    @media screen and (max-width: 500px) {
-      .banner .email {
-        top: 9%;
-        left: 73%;
-        font-size: 8px;
-      }
-
-      #titulo {
-        top: 4%;
-        left: 14%;
-        right: 70%;
-        font-size: 23px;
-      }
-
-      /* FINAL CSS DE LOS BLOQUES DE IMÁGENES, COLUMNAS, RESPONSIVE, ETC. */
-
-    }
+    /* FINAL CSS DE LOS BLOQUES DE IMÁGENES, COLUMNAS, RESPONSIVE, ETC. */
