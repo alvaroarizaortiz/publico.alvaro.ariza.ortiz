@@ -507,7 +507,7 @@
     /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 500px */
     @media screen and (max-width: 400px) {
       .banner .instagram {
-        top: 5%;
+        top: 1%;
         left: 73%;
         font-size: 8px;
       }
