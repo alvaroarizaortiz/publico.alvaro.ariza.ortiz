@@ -5,65 +5,123 @@
 
     /* Color de fondo y espaciado de todo el body */
     body {
-      background-color: #f1f1f1;
-      padding: 20px;
-
+      background-color: #f1f1f1; /* color de fondo del body */
+      padding: 20px; /* espaciado */
     }
 
-    a[data-caption] {
-      color: red;
-    }
-
+    /* Añadimos una fuente personalizada que usaré en el título y en los carteles */
     @font-face {
       font-family: 'Pacifico';
+      /* nombre de la fuente que vamos a usar */
       font-style: normal;
+      /* estilo de la fuente que vamos a usar */
       font-weight: 400;
+      /* grosor de la fuente que vamos a usar */
       font-display: swap;
+      /* swap hace que el navegador cargue la fuente personalizada de manera inmediata */
       src: url(https://fonts.gstatic.com/s/pacifico/v22/FwZY7-Qmy14u9lezJ-6H6Mk.woff2) format('woff2');
+      /* url de donde estamos sacando la fuente (woff2 es una extensión para archivos de fuentes web) */
     }
 
-    /* Imagen de banner responsive */
+    /* Imagen de banner responsive con sus respectivos ancho y alto */
     .banner {
       width: 100%;
       height: 30%;
     }
 
+    /* Le damos resolución a la pantalla con sus bordes, si minimiza será responsive */
+    .main {
+      max-width: 1920px; 
+      margin: auto;
+    }
+
+    /* Cambiamos el tamaño y la fuente de h1. La colocamos dentro del banner */
+    #titulo {
+      position: absolute;
+      font-size: 50px;
+      font-family: Pacifico;
+      top: 13%;
+      left: 20%;
+    }
+
+    /* Cambiamos el tamaño y la fuente de p */
+    p {
+      font-size: 16px; /* tamaño de la fuente de p */
+      font-family: Helvetica; /* familia de la fuente de p */
+    }
+
+    /* Cambiamos propiedades a la palabra portfolio que hemos introducido en el banner */
+    #titulo {
+      top: 7%; /* colocación por arriba */
+      left: 20%; /* colocación por la izquierda */
+      right: 70%; /* colocación por la derecha */
+      font-size: 55px; /* tamaño de la fuente del título */
+    }
+
+    /* Cambiamos propiedades de h3 */
+    h3 {
+      text-align: center; /* texto alineado al centro */
+      font-family: sans-serif; /* familia de la fuente del h3 */ 
+    }
+
+    /* INICIO CSS DE LOS DISTINTOS BOTONES */
+
     /* Botón de instagram dentro del banner.em usa el font-size del botón */
     .banner .instagram {
       position: absolute;
+      /* usamos absolute para colocar el botón dentro del banner */
       background-color: #0ec91869;
+      /* color de fondo */
       font-family: Pacifico;
+      /* usamos la fuente personalizada que añadimos antes */
       padding: 0.6em 1.3em;
+      /* espaciado */
       font-weight: 900;
+      /* grosor de la fuente que vamos a usar */
       font-size: 18px;
+      /* tamaño de la fuente que vamos a usar */
       border: 3px solid black;
+      /* tamaño y estilo del borde */
       border-radius: 0.4em;
+      /* redondea las esquinas  */
       box-shadow: 0.1em 0.1em;
+      /* sombra de la caja */
       top: 24%;
+      /* ajuste del botón por arriba */
       left: 70%;
+      /* ajuste del botón por la izquierda */
       width: 7em;
+      /* ancho del botón */
       height: 5em;
+      /* alto del botón */
     }
 
-    /* como interactua el botón instagram al dejar el cursor encima, en este caso hacemos que se mueva y tenga algo de sombra. em usa el font-size del botón */
+    /* como interactua el botón instagram al dejar el cursor encima, en este caso hacemos que se mueva y tenga algo de sombra. 
+    em usa el font-size del botón */
     .instagram:hover {
       transform: translate(-0.05em, -0.05em);
+      /* recoloca en el eje horizontal y/o vertical. */
       box-shadow: 0.15em 0.15em;
+      /* sombra de la caja */
     }
 
-    /* como interactua el botón instagram al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. em usa el font-size del botón */
+    /* como interactua el botón instagram al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. 
+    em usa el font-size del botón */
     .instagram:active {
       transform: translate(0.05em, 0.05em);
+      /* recoloca en el eje horizontal y/o vertical. */
       box-shadow: 0.05em 0.05em;
+      /* sombra de la caja */
     }
 
     /* Botón de email dentro del banner.em usa el font-size del botón */
     .banner .email {
       position: absolute;
-      background-color: #0ec91869;
-      font-family: Pacifico;
-      padding: 0.6em 1.3em;
-      font-weight: 900;
+      /* usamos absolute para colocar el botón dentro del banner */
+      background-color: #0ec91869; /* color de fondo */
+      font-family: Pacifico;  /* usamos la fuente personalizada que añadimos antes */
+      padding: 0.6em 1.3em;  /* espaciado */
+      font-weight: 900; 
       font-size: 18px;
       border: 3px solid black;
       border-radius: 0.4em;
@@ -86,6 +144,68 @@
       box-shadow: 0.05em 0.05em;
     }
 
+    /* botón que hace scroll hacia arriba de la página */
+    #arriba {
+      display: none;
+      /*esto oculta el botón por defecto hasta hacer el scroll mínimo establecido en el script */
+      font-family: Pacifico;
+      /* fuente personalizada añadida al css */
+      background-color: #0ec91869;
+      /* color de fondo */
+      position: fixed;
+      /* esto hace que esté pegado a la posición */
+      bottom: 1%;
+      /* esto hace que esté separado del fondo de la página un poquito*/
+      right: 0.25%;
+      /* esto hace que se separe de la derecha lo suficiente para no topar con la barra y de la izquierda lo suficiente para no tapar una imagen */
+      z-index: 99;
+      /* z-index hace que ningún elemento superponga esto. usamos 99 para que nada lo superponga*/
+      padding: 0.6em 1.3em;
+      /* espaciado. usamos em para usar la font-size del botón */
+      font-weight: 900;
+      /* cuerpo de la fuente */
+      font-size: 14px;
+      /* tamaño fuente */
+      border: 3px solid black;
+      /* borde */
+      border-radius: 0.4em;
+      /* borde redondo usando em */
+      box-shadow: 0.1em 0.1em;
+      /* sombra de la cajita del botón usando em */
+    }
+
+    /* como interactua el botón arriba al dejar el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. em usa el font-size del botón */
+    #arriba:hover {
+      transform: translate(-0.05em, -0.05em);
+      box-shadow: 0.15em 0.15em;
+    }
+
+    /* como interactua el botón arriba al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. em usa el font-size del botón */
+    .email:active {
+      transform: translate(0.05em, 0.05em);
+      box-shadow: 0.05em 0.05em;
+    }
+
+    /* botón que devuelve al índice */
+    #indice {
+      font-family: Pacifico;
+      /* fuente personalizada añadida al css */
+      background-color: #0ec91869;
+      /* color de fondo */
+      padding: 0.6em 1.3em;
+      /* espaciado. usamos em para usar la font-size del botón */
+      font-weight: 900;
+      /* cuerpo de la fuente */
+      font-size: 14px;
+      /* tamaño fuente */
+      border: 3px solid black;
+      /* borde */
+      border-radius: 0.4em;
+      /* borde redondo usando em */
+      box-shadow: 0.1em 0.1em;
+      /* sombra de la cajita del botón usando em */
+    }
+
     /* color del texto de los links sin pulsar */
     a:link {
       color: #6f0406;
@@ -106,46 +226,49 @@
       color: #ff7114
     }
 
-    /* Le damos resolución máxima a la pantalla, si minimiza será responsive */
-    .main {
-      max-width: 1280px;
-      margin: auto;
+    /* color del texto del botón índice sin pulsar */
+    #indice:link {
+      color: #6f0406;
     }
 
-    /* Cambiamos el tamaño y la fuente de h1. La colocamos dentro del banner */
-    #titulo {
-      position: absolute;
-      font-size: 50px;
-      font-family: Pacifico;
-      top: 13%;
-      left: 20%;
+    /* color del texto del botón índice ya pulsado */
+    #indice:visited {
+      color: #6f0406;
     }
 
-    /* Cambiamos el tamaño y la fuente de p */
-    p {
-      font-size: 16px;
-      font-family: Helvetica;
+    /* color del texto del botón índice al dejar el cursor encima */
+    #indice:hover {
+      color: #ff7114
     }
 
-    /* Cambiamos propiedades a la palabra portfolio que hemos introducido en el banner */
-    #titulo {
-      top: 7%;
-      left: 20%;
-      right: 70%;
-      font-size: 55px;
-
+    /* color del texto del botón índice justo al pulsarlo */
+    #indice:active {
+      color: #ff7114
     }
 
-    /* Cambiamos propiedades de h3 */
-    h3 {
-      text-align: center;
-      font-family: sans-serif;
+    /* color del texto del botón arriba sin pulsar */
+    #arriba:link {
+      color: #6f0406;
     }
 
-    /* movemos el segundo link del footer a la derecha */
-    .footerderecha {
-      float: right;
+    /* color del texto del botón arriba ya pulsado */
+    #arriba:visited {
+      color: #6f0406;
     }
+
+    /* color del texto del botón arriba al dejar el cursor encima */
+    #arriba:hover {
+      color: #ff7114
+    }
+
+    /* color del texto del botón arriba justo al pulsarlo */
+    #arriba:active {
+      color: #ff7114
+    }
+
+    /* FINAL CSS DE LOS DISTINTOS BOTONES */
+
+    /* INICIO CSS DE LOS BLOQUES DE IMÁGENES, COLUMNAS, RESPONSIVE, ETC. */
 
     /* Espacio entre líneas */
     .row {
@@ -177,48 +300,6 @@
       padding: 10px;
     }
 
-    #arriba {
-      display: none;
-      /*esto oculta el botón por defecto hasta hacer el scroll mínimo establecido en el script */
-      font-family: Pacifico;
-      /* fuente personalizada añadida al css */
-      background-color: #0ec91869;
-      /* color de fondo */
-      position: fixed;
-      /* esto hace que esté pegado a la posición */
-      bottom: 1%;
-      /* esto hace que esté separado 20px del fondo de la página */
-      right: 2%;
-      /* esto hace que esté a 30 px de la derecha */
-      z-index: 99;
-      /* z-index hace que ningún elemento superponga esto. usamos 99 para que nada lo superponga*/
-      padding: 0.6em 1.3em;
-      /* espaciado. usamos em para usar la font-size del botón */
-      font-weight: 900;
-      /* cuerpo de la fuente */
-      font-size: 13px;
-      /* tamaño fuente */
-      border: 3px solid black;
-      /* borde */
-      border-radius: 0.4em;
-      /* borde redondo usando em */
-      box-shadow: 0.1em 0.1em;
-      /* sombra de la cajita del botón usando em */
-    }
-
-
-    /* como interactua el botón arriba al dejar el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. em usa el font-size del botón */
-    #arriba:hover {
-      transform: translate(-0.05em, -0.05em);
-      box-shadow: 0.15em 0.15em;
-    }
-
-    /* como interactua el botón arriba al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. em usa el font-size del botón */
-    .email:active {
-      transform: translate(0.05em, 0.05em);
-      box-shadow: 0.05em 0.05em;
-    }
-
     /* Esto transforma las imágenes y las hace responsive para cuando se toque la pantalla y hacemos width 50% para que se ponga en 2 columnas en vez de en una solo */
     @media screen and (max-width: 1280px) {
       .column {
@@ -240,7 +321,6 @@
         left: 14%;
         right: 70%;
         font-size: 55px;
-
       }
     }
 
@@ -282,7 +362,6 @@
         left: 14%;
         right: 70%;
         font-size: 43px;
-
       }
     }
 
@@ -307,7 +386,6 @@
         left: 14%;
         right: 70%;
         font-size: 30px;
-
       }
     }
 
@@ -332,6 +410,8 @@
         left: 14%;
         right: 70%;
         font-size: 23px;
-
       }
+
+      /* FINAL CSS DE LOS BLOQUES DE IMÁGENES, COLUMNAS, RESPONSIVE, ETC. */
+
     }
