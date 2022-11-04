@@ -27,23 +27,32 @@
 
     /* Imagen de banner responsive con sus respectivos ancho y alto */
     .banner {
-      width: 100%; /* ancho del banner */
-      height: 30%; /* alto del banner */
+      width: 100%;
+      /* ancho del banner */
+      height: 30%;
+      /* alto del banner */
     }
 
     /* Le damos resolución a la pantalla con sus bordes, si minimiza será responsive */
     .main {
       max-width: 1280px;
+      /* espaciado */
       margin: auto;
+      /* asignamos un margen automático a todos los márgenes */
     }
 
     /* Cambiamos el tamaño y la fuente de h1. La colocamos dentro del banner */
     #titulo {
       position: absolute;
+      /* absolute coloca la palabra portfolio dentro del banner */
       font-size: 50px;
+      /* tamaño de la fuente */
       font-family: Pacifico;
+      /* colocamos la fuente personalizada */
       top: 13%;
+      /* separación parte de arriba */
       left: 20%;
+      /* separación parte izquierda */
     }
 
     /* Cambiamos el tamaño y la fuente de p */
@@ -135,26 +144,39 @@
       padding: 0.6em 1.3em;
       /* espaciado */
       font-weight: 900;
+      /* grosor de la fuente que vamos a usar */
       font-size: 18px;
+      /* tamaño de la fuente */
       border: 3px solid black;
+      /* tamaño y estilo del borde */
       border-radius: 0.4em;
+      /* redondea las esquinas  */
       box-shadow: 0.1em 0.1em;
+      /* sombra de la caja */
       top: 11%;
+      /* ajuste del botón por arriba */
       left: 71%;
+      /* ajuste del botón por la izquierda */
       width: 7em;
+      /* ancho del botón */
       height: 5em;
+      /* alto del botón */
     }
 
     /* como interactua el botón email al dejar el cursor encima, en este caso  hacemos que se mueva y tenga algo de sombra. em usa el font-size del botón */
     .email:hover {
       transform: translate(-0.05em, -0.05em);
+      /* recoloca en el eje horizontal y/o vertical. */
       box-shadow: 0.15em 0.15em;
+      /* sombra de la caja */
     }
 
     /* como interactua el botón email al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. em usa el font-size del botón */
     .email:active {
       transform: translate(0.05em, 0.05em);
+      /* recoloca en el eje horizontal y/o vertical. */
       box-shadow: 0.05em 0.05em;
+      /* sombra de la caja */
     }
 
     /* botón que hace scroll hacia arriba de la página */
@@ -294,23 +316,28 @@
       padding: 10px;
     }
 
-    /* Crea 4 columnas con un 25% de width cada una */
+    /* Creamos 4 columnas con un 25% de width cada una */
     .column {
       float: left;
+      /* ubicamos con float a la izquierda */
       width: 25%;
+      /* ancho del 25% por columna, 4*25=100 del ancho de la página */
     }
 
     /* Esto ayuda a que el fondo blanco de las cajas de imágenes y texto no se fusione con el de al lado usando un espacio en blanco */
     .row:after {
       content: "";
+      /* hace que no contenga un elemento  */
       display: table;
+      /* el elemento se comporta como una table */
       clear: both;
+      /* el elemento es movido hacia abajo para limpiar tanto elementos flotantes de la izquierda como de la derecha. */
     }
 
     /* Fondo blanco de las cajas y espaciado entre la imagen y la última palabra */
     .content {
-      background-color: white;
-      padding: 10px;
+      background-color: white; /* color de fondo blanco */
+      padding: 10px; /* espaciado */
     }
 
     /* Esto transforma las imágenes y las hace responsive para cuando se toque la pantalla y hacemos width 50% para que se ponga en 2 columnas en vez de en una solo */
@@ -352,7 +379,7 @@
       }
     }
 
-    /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 1500px */
+    /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 1550px */
     @media screen and (max-width: 1550px) {
       .banner .instagram {
         top: 10%;
@@ -378,8 +405,8 @@
       }
     }
 
-    /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 1350px */
-    @media screen and (max-width: 1367px) {
+    /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 1366px */
+    @media screen and (max-width: 1366px) {
       .banner .instagram {
         top: 10%;
         left: 69%;
@@ -387,7 +414,7 @@
       }
     }
 
-    @media screen and (max-width: 1367px) {
+    @media screen and (max-width: 1366px) {
       .banner .email {
         top: 23%;
         left: 83%;
@@ -395,7 +422,7 @@
       }
     }
 
-    @media screen and (max-width: 1367px) {
+    @media screen and (max-width: 1366px) {
       #titulo {
         top: 4%;
         left: 14%;
@@ -487,7 +514,7 @@
     }
 
     @media screen and (max-width: 400px) {
-      .banner .email { 
+      .banner .email {
         top: 9%;
         left: 73%;
         font-size: 8px;
