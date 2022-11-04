@@ -456,7 +456,7 @@
     No lo bajamos de 500 porque se mantiene bien hasta 400. */
     @media screen and (max-width: 500px) {
       .banner .instagram {
-        top: 3%;
+        top: 2%;
         left: 73%;
         font-size: 8px;
       }
@@ -464,13 +464,13 @@
 
     @media screen and (max-width: 500px) {
       .banner .email {
-        top: 6%;
+        top: 5%;
         left: 73%;
         font-size: 8px;
       }
 
       #titulo {
-        top: 0.5%;
+        top: 0.25%;
         left: 14%;
         right: 70%;
         font-size: 30px;
