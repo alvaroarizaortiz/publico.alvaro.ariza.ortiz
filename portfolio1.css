@@ -507,7 +507,7 @@
     /* Transformamos en responsive lo que hay dentro del banner (h1, buttons) 500px */
     @media screen and (max-width: 400px) {
       .banner .instagram {
-        top: 1%;
+        top: 3%;
         left: 73%;
         font-size: 8px;
       }
@@ -515,7 +515,7 @@
 
     @media screen and (max-width: 400px) {
       .banner .email {
-        top: 11%;
+        top: 9%;
         left: 73%;
         font-size: 8px;
       }
