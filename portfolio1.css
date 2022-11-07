@@ -133,8 +133,8 @@
       /* sombra de la caja */
     }
 
-    /* Botón de email dentro del banner.em usa el font-size del botón */
-    .banner .email {
+    /* Botón de pinterest dentro del banner.em usa el font-size del botón */
+    .banner .pinterest  {
       position: absolute;
       /* usamos absolute para colocar el botón dentro del banner */
       background-color: #0ec91869;
@@ -163,16 +163,16 @@
       /* alto del botón */
     }
 
-    /* como interactua el botón email al dejar el cursor encima, en este caso  hacemos que se mueva y tenga algo de sombra. em usa el font-size del botón */
-    .email:hover {
+    /* como interactua el botón pinterest  al dejar el cursor encima, en este caso  hacemos que se mueva y tenga algo de sombra. em usa el font-size del botón */
+    .pinterest:hover {
       transform: translate(-0.05em, -0.05em);
       /* recoloca en el eje horizontal y/o vertical. */
       box-shadow: 0.15em 0.15em;
       /* sombra de la caja */
     }
 
-    /* como interactua el botón email al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. em usa el font-size del botón */
-    .email:active {
+    /* como interactua el botón pinterest  al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. em usa el font-size del botón */
+    .pinterest:active {
       transform: translate(0.05em, 0.05em);
       /* recoloca en el eje horizontal y/o vertical. */
       box-shadow: 0.05em 0.05em;
@@ -216,7 +216,7 @@
     }
 
     /* como interactua el botón arriba al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. em usa el font-size del botón */
-    .email:active {
+    .pinterest:active {
       transform: translate(0.05em, 0.05em);
       box-shadow: 0.05em 0.05em;
     }
@@ -363,7 +363,7 @@
     }
 
     @media screen and (max-width: 1920px) {
-      .banner .email {
+      .banner .pinterest {
         top: 25%;
         left: 73%;
         font-size: 15px;
@@ -389,7 +389,7 @@
     }
 
     @media screen and (max-width: 1550px) {
-      .banner .email {
+      .banner .pinterest {
         top: 20%;
         left: 80%;
         font-size: 15px;
@@ -415,7 +415,7 @@
     }
 
     @media screen and (max-width: 1366px) {
-      .banner .email {
+      .banner .pinterest {
         top: 23%;
         left: 83%;
         font-size: 15px;
@@ -441,7 +441,7 @@
     }
 
     @media screen and (max-width: 1000px) {
-      .banner .email {
+      .banner .pinterest {
         top: 8%;
         left: 83%;
         font-size: 13px;
@@ -465,7 +465,7 @@
     }
 
     @media screen and (max-width: 700px) {
-      .banner .email {
+      .banner .pinterest {
         top: 5%;
         left: 83%;
         font-size: 10px;
@@ -490,7 +490,7 @@
     }
 
     @media screen and (max-width: 500px) {
-      .banner .email {
+      .banner .pinterest {
         top: 7.5%;
         left: 73%;
         font-size: 8px;
@@ -514,7 +514,7 @@
     }
 
     @media screen and (max-width: 400px) {
-      .banner .email {
+      .banner .pinterest {
         top: 9%;
         left: 73%;
         font-size: 8px;
@@ -529,3 +529,4 @@
     }
 
     /* FINAL CSS DE LOS BLOQUES DE IMÁGENES, COLUMNAS, RESPONSIVE, ETC. */
+
