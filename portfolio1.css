@@ -75,14 +75,20 @@
       /* tamaño de la fuente del título */
     }
 
-    /* Cambiamos propiedades de h3 */
-    h3 {
+    /* Cambiamos propiedades de h2 */
+    h2 {
       text-align: center;
       /* texto alineado al centro */
       font-family: sans-serif;
-      /* familia de la fuente del h3 */
+      /* familia de la fuente del h2 */
+      font-size: 18px;
     }
-
+    
+    /* Cambiamos propiedades de pre */
+    pre {
+      font-size: 14px;
+    }
+    
     /* INICIO CSS DE LOS DISTINTOS BOTONES */
 
     /* Botón de instagram dentro del banner.em usa el font-size del botón */
