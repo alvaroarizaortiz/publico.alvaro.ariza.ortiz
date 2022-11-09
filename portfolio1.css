@@ -547,14 +547,14 @@
     }
     
     .circulo {
-      width: 20px;
-      height: 20px;
-      position: absolute;
-      border-radius: 50%;
-      background-color: rgb(255, 0, 0);
-      left: 15%;
-      transform-origin: 50%;
-      animation: circle7124 .5s alternate infinite ease;
+      width: 20px; /* Ancho de las bolitas */
+      height: 20px; /* Alto de las bolitas */
+      position: absolute; /* Con absolute nos aseguramos que aparece por encima de otros elementos */
+      border-radius: 50%; /* Bordes redondeados */
+      background-color: rgb(255, 0, 0); /* Fondo rojo */
+      left: 15%; /* Desplazamiento izquierda */
+      transform-origin: 50%; 
+      animation: circle7124 .5s alternate infinite ease; /* Animación seleccionada con el estilo seleccionado */
     }
     
     @keyframes circle7124 {
