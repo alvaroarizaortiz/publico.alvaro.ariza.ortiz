@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(https://i.ibb.co/KjC2Kyp/fondolibros.jpg;)
+}
+
+h1,
+h2,
+p {
+    padding: 0;
+    margin: 0
+}
+
+/* Añadimos una fuente personalizada que usaré en el título y en los carteles */
+@font-face {
+    font-family: 'Pacifico';
+    /* nombre de la fuente que vamos a usar */
+    font-style: normal;
+    /* estilo de la fuente que vamos a usar */
+    font-weight: 400;
+    /* grosor de la fuente que vamos a usar */
+    font-display: swap;
+    /* swap hace que el navegador cargue la fuente personalizada de manera inmediata */
+    src: url(https://fonts.gstatic.com/s/pacifico/v22/FwZY7-Qmy14u9lezJ-6H6Mk.woff2) format('woff2');
+    /* url de donde estamos sacando la fuente (woff2 es una extensión para archivos de fuentes web) */
+}
+
+/* INICIO CSS DE LOS DISTINTOS BOTONES */
+
+/* Botón de instagram dentro del banner.em usa el font-size del botón */
+.navegacion .indice {
+    position: static;
+    /* usamos absolute para colocar el botón dentro del banner */
+    background-color: #e39f0ce7;
+    /* color de fondo */
+    font-family: Pacifico;
+    /* usamos la fuente personalizada que añadimos antes */
+    padding: 0.6em 1.3em;
+    /* espaciado */
+    font-weight: 900;
+    /* grosor de la fuente que vamos a usar */
+    font-size: 18px;
+    /* tamaño de la fuente que vamos a usar */
+    border: 3px solid black;
+    /* tamaño y estilo del borde */
+    border-radius: 0.4em;
+    /* redondea las esquinas  */
+    box-shadow: 0.1em 0.1em;
+    /* sombra de la caja */
+}
+
+/* como interactua el botón instagram al dejar el cursor encima, en este caso hacemos que se mueva y tenga algo de sombra. 
+      em usa el font-size del botón */
+.indice:hover {
+    transform: translate(-0.05em, -0.05em);
+    /* recoloca en el eje horizontal y/o vertical. */
+    box-shadow: 0.15em 0.15em;
+    /* sombra de la caja */
+}
+
+/* como interactua el botón instagram al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. 
+      em usa el font-size del botón */
+.indice:active {
+    transform: translate(0.05em, 0.05em);
+    /* recoloca en el eje horizontal y/o vertical. */
+    box-shadow: 0.05em 0.05em;
+    /* sombra de la caja */
+}
+
+/* Botón de instagram dentro del banner.em usa el font-size del botón */
+.librosmal {
+    position: static;
+    /* usamos absolute para colocar el botón dentro del banner */
+    background-color: #e39f0ce7;
+    /* color de fondo */
+    font-family: Pacifico;
+    /* usamos la fuente personalizada que añadimos antes */
+    padding: 0.6em 1.3em;
+    /* espaciado */
+    font-weight: 900;
+    /* grosor de la fuente que vamos a usar */
+    font-size: 18px;
+    /* tamaño de la fuente que vamos a usar */
+    border: 3px solid black;
+    /* tamaño y estilo del borde */
+    border-radius: 0.4em;
+    /* redondea las esquinas  */
+    box-shadow: 0.1em 0.1em;
+    /* sombra de la caja */
+}
+
+/* como interactua el botón instagram al dejar el cursor encima, en este caso hacemos que se mueva y tenga algo de sombra. 
+      em usa el font-size del botón */
+.librosmal:hover {
+    transform: translate(-0.05em, -0.05em);
+    /* recoloca en el eje horizontal y/o vertical. */
+    box-shadow: 0.15em 0.15em;
+    /* sombra de la caja */
+}
+
+/* como interactua el botón instagram al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. 
+      em usa el font-size del botón */
+.librosmal:active {
+    transform: translate(0.05em, 0.05em);
+    /* recoloca en el eje horizontal y/o vertical. */
+    box-shadow: 0.05em 0.05em;
+    /* sombra de la caja */
+}
+
+/* FIN CSS DE LOS DISTINTOS BOTONES */
+
+header {
+    width: 100%;
+    font-weight: 700px;
+    padding: 10px 10px;
+    padding-bottom: 30px;
+    font-family: Pacifico;
+    text-align: center;
+    background: #936726cd
+}
+
+header h1 {
+    font-size: 80px;
+    margin-bottom: 40px;
+}
+
+header h2 {
+    font-family: monospace;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+h1 span {
+    text-decoration: underline;
+}
+
+.navegacion a {
+    color: rgb(0, 0, 0);
+}
+
+.contenedor{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+}
+
+.primeracajalibro {  
+}
+
