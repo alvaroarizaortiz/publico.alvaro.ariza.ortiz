@@ -15,18 +15,90 @@ p {
     margin: 0
 }
 
-/* Añadimos una fuente personalizada que usaré en el título y en los carteles */
-@font-face {
-    font-family: 'Pacifico';
-    /* nombre de la fuente que vamos a usar */
-    font-style: normal;
-    /* estilo de la fuente que vamos a usar */
-    font-weight: 400;
-    /* grosor de la fuente que vamos a usar */
-    font-display: swap;
-    /* swap hace que el navegador cargue la fuente personalizada de manera inmediata */
-    src: url(https://fonts.gstatic.com/s/pacifico/v22/FwZY7-Qmy14u9lezJ-6H6Mk.woff2) format('woff2');
-    /* url de donde estamos sacando la fuente (woff2 es una extensión para archivos de fuentes web) */
+header {
+    padding: 10px 10px;
+    padding-bottom: 40px;
+    text-align: center;
+    background: #683f0fcd
+}
+
+header h1 {
+    font-family: Perpetua;
+    font-size: 66px;
+    margin-bottom: 40px;
+    padding-top: 1%;
+}
+
+header h2 {
+    font-family: monospace;
+    font-size: 25px;
+    margin: 3%;
+    text-emphasis: filled rgb(255, 238, 0);
+    text-emphasis-position: under right;
+}
+
+h3 {
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1 span {
+    text-decoration: underline;
+}
+
+p em {
+    color: #968970;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+.texto p {
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.navegacion a {
+    color: rgb(0, 0, 0);
+}
+
+.wrapper {
+    font-family: "Open Sans", sans-serif;
+}
+
+article {
+    position: relative;
+    background: #fff;
+    padding: 20px 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 50px;
+    transform: translateZ(0);
+    min-height: 400px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateZ(0);
+    padding-top: 2%;
+
+}
+
+.texto {
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
 }
 
 /* INICIO CSS DE LOS DISTINTOS BOTONES */
@@ -37,7 +109,7 @@ p {
     /* usamos absolute para colocar el botón dentro del banner */
     background-color: #e39f0ce7;
     /* color de fondo */
-    font-family: Pacifico;
+    font-family: monospace;
     /* usamos la fuente personalizada que añadimos antes */
     padding: 0.6em 1.3em;
     /* espaciado */
@@ -77,7 +149,7 @@ p {
     /* usamos absolute para colocar el botón dentro del banner */
     background-color: #e39f0ce7;
     /* color de fondo */
-    font-family: Pacifico;
+    font-family: monospace;
     /* usamos la fuente personalizada que añadimos antes */
     padding: 0.6em 1.3em;
     /* espaciado */
@@ -111,78 +183,64 @@ p {
     /* sombra de la caja */
 }
 
-/* FIN CSS DE LOS DISTINTOS BOTONES */
-
-header {
-    width: 100%;
-    font-weight: 700px;
-    padding: 10px 10px;
-    padding-bottom: 30px;
-    font-family: Pacifico;
-    text-align: center;
-    background: #936726cd
-}
-
-header h1 {
-    font-size: 80px;
-    margin-bottom: 40px;
-}
-
-header h2 {
+/* Botón para los libros en Amazon */
+.libros-amazon {
+    position: static;
+    /* usamos absolute para colocar el botón dentro del banner */
+    background-color: #dcd1b9e7;
+    /* color de fondo */
     font-family: monospace;
-    font-size: 25px;
-    margin-bottom: 30px;
+    /* usamos la fuente personalizada que añadimos antes */
+    padding: 0.6em 1.3em;
+    /* espaciado */
+    font-weight: 900;
+    /* grosor de la fuente que vamos a usar */
+    font-size: 12px;
+    /* tamaño de la fuente que vamos a usar */
+    border: 3px solid black;
+    /* tamaño y estilo del borde */
+    border-radius: 0.4em;
+    /* redondea las esquinas  */
+    box-shadow: 0.1em 0.1em;
+    /* sombra de la caja */
 }
 
-h1 span {
-    text-decoration: underline;
+/* como interactua el botón libros al dejar el cursor encima, en este caso hacemos que se mueva y tenga algo de sombra. 
+      em usa el font-size del botón */
+.libros-amazon:hover {
+    transform: translate(-0.05em, -0.05em);
+    /* recoloca en el eje horizontal y/o vertical. */
+    box-shadow: 0.15em 0.15em;
+    /* sombra de la caja */
 }
 
-.navegacion a {
-    color: rgb(0, 0, 0);
+/* como interactua el botón libros al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. 
+      em usa el font-size del botón */
+.libros-amazon:active {
+    transform: translate(0.05em, 0.05em);
+    /* recoloca en el eje horizontal y/o vertical. */
+    box-shadow: 0.05em 0.05em;
+    /* sombra de la caja */
 }
 
-.contenedor {
-    display: flex;
-    justify-content: center;
+/* color del texto de los links sin pulsar */
+a:link {
+    color: #ea1114;
 }
 
-.textosalamandra {
-    margin-left: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
-    text-align: justify;
+/* color del texto de los links ya pulsados */
+a:visited {
+    color: #3d494c;
 }
 
-.imagensalamandra {
-    display: flex;
-    padding: 10%;
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
-    transform: rotateX(50deg);  
-    transform: rotateY(25deg);  
-    transform: rotateZ(5deg);  
+/* color del texto de los links al dejar el cursor encima */
+a:hover {
+    color: #ff7114
 }
 
-.textofahrenheit {
-    margin-left: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
-    text-align: justify;
+/* color del texto de los links justo al pulsarlos */
+a:active {
+    color: #ff7114
 }
 
-.imagenfahrenheit {
-    display: flex;
-    padding: 10%;
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
-    transform: rotateX(50deg);  
-    transform: rotateY(25deg);  
-    transform: rotateZ(5deg);  
-}
+/* FIN CSS DE LOS DISTINTOS BOTONES */
