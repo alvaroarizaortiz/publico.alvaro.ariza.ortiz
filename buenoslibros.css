@@ -5,7 +5,6 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: antiquewhite;
 }
 
 h1,
@@ -19,7 +18,7 @@ header {
     padding: 10px 10px;
     padding-bottom: 40px;
     text-align: center;
-    background: #683f0fcd
+    background-image: url("https://i.ibb.co/PYXvHhX/pexels-jess-bailey-designs-1479120-2.jpg");
 }
 
 header h1 {
@@ -33,7 +32,7 @@ header h2 {
     font-family: monospace;
     font-size: 25px;
     margin: 3%;
-    text-emphasis: filled rgb(255, 238, 0);
+    text-emphasis: filled rgb(0, 0, 0);
     text-emphasis-position: under right;
 }
 
@@ -48,9 +47,10 @@ h1 span {
 }
 
 p em {
-    color: #968970;
+    color: #693c1e;
     font-size: 14px;
     font-family: monospace;
+    font-weight:bolder;
 }
 
 .texto p {
@@ -68,7 +68,7 @@ p em {
 
 article {
     position: relative;
-    background: #fff;
+    background: #ffffff;
     padding: 20px 50px;
     padding-right: 50px;
     padding-left: 50px;
@@ -94,11 +94,11 @@ article {
 }
 
 .texto {
-    margin-left: 70px;
+    margin-left: 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
+    width: 20vw;
 }
 
 /* INICIO CSS DE LOS DISTINTOS BOTONES */
@@ -107,7 +107,7 @@ article {
 .navegacion .indice {
     position: static;
     /* usamos absolute para colocar el botón dentro del banner */
-    background-color: #e39f0ce7;
+    background-color: #cbdfec;
     /* color de fondo */
     font-family: monospace;
     /* usamos la fuente personalizada que añadimos antes */
@@ -147,7 +147,7 @@ article {
 .librosmal {
     position: static;
     /* usamos absolute para colocar el botón dentro del banner */
-    background-color: #e39f0ce7;
+    background-color: #cbdfec;
     /* color de fondo */
     font-family: monospace;
     /* usamos la fuente personalizada que añadimos antes */
@@ -187,7 +187,7 @@ article {
 .libros-amazon {
     position: static;
     /* usamos absolute para colocar el botón dentro del banner */
-    background-color: #dcd1b9e7;
+    background-color: #f1ab14e7;
     /* color de fondo */
     font-family: monospace;
     /* usamos la fuente personalizada que añadimos antes */
@@ -225,7 +225,7 @@ article {
 
 /* color del texto de los links sin pulsar */
 a:link {
-    color: #ea1114;
+    color: #211199;
 }
 
 /* color del texto de los links ya pulsados */
@@ -235,12 +235,12 @@ a:visited {
 
 /* color del texto de los links al dejar el cursor encima */
 a:hover {
-    color: #ff7114
+    color: #ce580a
 }
 
 /* color del texto de los links justo al pulsarlos */
 a:active {
-    color: #ff7114
+    color: #dd854a
 }
 
 /* FIN CSS DE LOS DISTINTOS BOTONES */
