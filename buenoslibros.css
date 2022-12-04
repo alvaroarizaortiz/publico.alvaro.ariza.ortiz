@@ -77,12 +77,18 @@
       margin-bottom: 1rem;
   }
 
-  /* Cada imagen del libro con su texto es un article, por lo que cumple la función de body al completo y he decidido darle estilo a este. */
+  /* Cada imagen del libro con su texto es un article, por lo que toco aqui el background color y los padding */
   article {
       position: relative;
       background: #ffffff;
-      padding: 20px 50px;
-      margin: auto;
+      padding-bottom: 20px;
+      padding-top: 10px;
+  }
+
+  /* Le pongo margenes a la imagen */
+  .imagen{
+    margin-left: 5%;
+    margin-right: 3%;
   }
 
   /* El flexbox para los contenedores de cada article y lo que permite que la imagen y el texto estén al lado y centrados. */
@@ -100,9 +106,10 @@
 
   }
 
-  /* El flexbox para las cajas de texto. He considerado que el vidth ideal es de 20vw. */
+  /* El flexbox para las cajas de texto. He considerado que el vidth ideal es de 30vw. */
   .texto {
       margin-left: 3%;
+      margin-right: 3%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -262,63 +269,6 @@
       }
   }
 
-  @media screen and (max-width: 300px) {
-
-      .contenedor {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-      }
-
-      .texto {
-          width: auto;
-         
-      }
-
-      .portada {
-          width: auto;
-      }
-
-  }
-
-  @media screen and (max-width: 400px) {
-
-      .contenedor {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-      }
-
-      .texto {
-          width: auto;
-      }
-
-      .portada {
-          width: auto;
-      }
-
-  }
-
-
-  @media screen and (max-width: 500px) {
-
-      .contenedor {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-      }
-
-      .texto {
-          width: auto;
-      }
-
-      .portada {
-          width: auto;
-          padding-left: 5%;
-      }
-  }
-
-
   @media screen and (max-width: 600px) {
 
       .contenedor {
@@ -331,8 +281,68 @@
           width: auto;
       }
 
-      .portada {
+      .imagen {
+          width: 90%;
+          height: 90%;
+      }
+  }
+
+  @media screen and (max-width: 500px) {
+
+      .contenedor {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      .texto {
+          width: 80%;
+      }
+
+      .imagen {
+          width: 90%;
+          height: 90%;
+      }
+  }
+
+
+
+  @media screen and (max-width: 400px) {
+      .contenedor {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      .texto {
+          width: auto;
+      }
+
+
+      .imagen {
+          width: 90%;
+          height: 90%;
+      }
+
+  }
+
+
+  @media screen and (max-width: 300px) {
+
+      .contenedor {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      .texto {
           width: auto;
 
       }
+
+      .imagen {
+          width: 90%;
+          height: 90%;
+      }
+
   }
