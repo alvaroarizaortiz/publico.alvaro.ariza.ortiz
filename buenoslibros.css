@@ -106,7 +106,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 20vw;
+      width: 30vw;
   }
 
   /* INICIO CSS DE LOS DISTINTOS BOTONES */
@@ -252,3 +252,87 @@
   }
 
   /* FIN CSS DE LOS DISTINTOS BOTONES */
+
+
+  /* @media PARA HACERLO RESPONSIVE EN DISPOSITIVOS DESDE 1280 HASTA */
+
+  @media screen and (max-width: 1280px) {
+      .texto {
+          width: 50%;
+      }
+  }
+
+  @media screen and (max-width: 300px) {
+
+      .contenedor {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      .texto {
+          width: auto;
+         
+      }
+
+      .portada {
+          width: auto;
+      }
+
+  }
+
+  @media screen and (max-width: 400px) {
+
+      .contenedor {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      .texto {
+          width: auto;
+      }
+
+      .portada {
+          width: auto;
+      }
+
+  }
+
+
+  @media screen and (max-width: 500px) {
+
+      .contenedor {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      .texto {
+          width: auto;
+      }
+
+      .portada {
+          width: auto;
+          padding-left: 5%;
+      }
+  }
+
+
+  @media screen and (max-width: 600px) {
+
+      .contenedor {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      .texto {
+          width: auto;
+      }
+
+      .portada {
+          width: auto;
+
+      }
+  }
