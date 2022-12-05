@@ -86,9 +86,9 @@
   }
 
   /* Le pongo margenes a la imagen */
-  .imagen{
-    margin-left: 5%;
-    margin-right: 3%;
+  .imagen {
+      margin-left: 5%;
+      margin-right: 3%;
   }
 
   /* El flexbox para los contenedores de cada article y lo que permite que la imagen y el texto estén al lado y centrados. */
