@@ -20,7 +20,7 @@ p {
 /* He decidido separar cada libro con un <hr> y le doy estilo a rayas y cambio el tamaño para que no sea una simple línea */
 hr {
     border: 3px dashed;
-    color: #f1ab14e7;
+    color: #423f37e7;
     border-radius: 5px;
 }
 
@@ -202,7 +202,7 @@ article {
 .libros-amazon {
     position: static;
     /* usamos static para que no se muevan */
-    background-color: #f1ab14e7;
+    background-color: #b4b0a6e7;
     /* color de fondo */
     font-family: monospace;
     /* usamos la fuente que queremos */
@@ -245,7 +245,7 @@ a:link {
 
 /* color del texto de los links ya pulsados */
 a:visited {
-    color: #3d494c;
+    color: #9e203d;
 }
 
 /* color del texto de los links al dejar el cursor encima */
