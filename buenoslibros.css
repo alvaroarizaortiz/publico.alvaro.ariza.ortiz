@@ -1,362 +1,356 @@
-   /* Box sizing del HTML */
-   * {
-       box-sizing: border-box
-   }
+/* Box sizing del HTML */
+* {
+    box-sizing: border-box
+}
 
-   /* Establecer un margen y un padding de 0px permite que mi banner se vea entero y no con un ligero margen con el color de fondo */
-   body {
-       padding: 0px;
-       margin: 0px;
-   }
+/* Establecer un margen y un padding de 0px permite que mi banner se vea entero y no con un ligero margen con el color de fondo */
+body {
+    padding: 0px;
+    margin: 0px;
+}
 
-   /* Exactamente igual que arriba, estableciendo 0px de ambos no tengo un margen predefinido */
-   h1,
-   h2,
-   p {
-       padding: 0px;
-       margin: 0px;
-   }
+/* Exactamente igual que arriba, estableciendo 0px de ambos no tengo un margen predefinido */
+h1,
+h2,
+p {
+    padding: 0px;
+    margin: 0px;
+}
 
-   /* He decidido separar cada libro con un <hr> y le doy estilo a rayas y cambio el tamaño para que no sea una simple línea */
-   hr {
-       border: 3px dashed;
-       color: #f1ab14e7;
-       border-radius: 5px;
-   }
+/* He decidido separar cada libro con un <hr> y le doy estilo a rayas y cambio el tamaño para que no sea una simple línea */
+hr {
+    border: 3px dashed;
+    color: #f1ab14e7;
+    border-radius: 5px;
+}
 
-   /* Estilo del header, con su padding, el texto centrado y una foto extraída de pexels (uso libre) y recortada en GIMP para que tenga las dimensiones que quería.
+/* Estilo del header, con su padding, el texto centrado y una foto extraída de pexels (uso libre) y recortada en GIMP para que tenga las dimensiones que quería.
   Esta es la imagen original: https://www.pexels.com/es-es/foto/pagina-de-libro-beige-sobre-superficie-blanca-1479120/ */
-   header {
-       padding: 10px 10px;
-       padding-bottom: 40px;
-       text-align: center;
-       background-image: url("https://i.ibb.co/PYXvHhX/pexels-jess-bailey-designs-1479120-2.jpg");
-   }
+header {
+    padding: 10px 10px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-image: url("https://i.ibb.co/PYXvHhX/pexels-jess-bailey-designs-1479120-2.jpg");
+}
 
-   /* Tamaño, margen, padding y fuente de la letra del h1 dentro del header: título. */
-   header h1 {
-       font-family: Perpetua;
-       font-size: 66px;
-       margin-bottom: 40px;
-       padding-top: 1%;
-   }
+/* Tamaño, margen, padding y fuente de la letra del h1 dentro del header: título. */
+header h1 {
+    font-family: Perpetua;
+    font-size: 66px;
+    margin-bottom: 40px;
+    padding-top: 1%;
+}
 
-   /* Tamaño, margen, padding y fuente de la letra del h2 dentro del header: descripción breve. */
-   header h2 {
-       font-family: monospace;
-       font-size: 25px;
-       margin: 3%;
-       text-emphasis: filled rgb(0, 0, 0);
-       text-emphasis-position: under right;
-   }
+/* Tamaño, margen, padding y fuente de la letra del h2 dentro del header: descripción breve. */
+header h2 {
+    font-family: monospace;
+    font-size: 25px;
+    margin: 3%;
+    text-emphasis: filled rgb(0, 0, 0);
+    text-emphasis-position: under right;
+}
 
-   /* Tamaño, fuente y letra centrada para h3: títulos de los libros. */
-   h3 {
-       font-family: monospace;
-       font-size: 20px;
-       text-align: center;
-   }
+/* Tamaño, fuente y letra centrada para h3: títulos de los libros. */
+h3 {
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+}
 
 
-   /* Línea que subraya la palabra destacada del título a rayas. */
-   h1 span {
-       text-decoration: underline dashed;
-   }
+/* Línea que subraya la palabra destacada del título a rayas. */
+h1 span {
+    text-decoration: underline dashed;
+}
 
-   /* Letra em que uso para hacer una breve introducción al libro. */
-   p em {
-       color: #693c1e;
-       font-size: 14px;
-       font-family: monospace;
-       font-weight: bolder;
-   }
+/* Letra em que uso para hacer una breve introducción al libro. */
+p em {
+    color: #693c1e;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: bolder;
+}
 
-   /* El tamaño de los <p>. El margin-bottom es vital para el diseño de la página, subirlo un poco más dejaría grandes espacios entre parrafos y bajarlo pegaría demasiado el texto.*/
-   .texto p {
-       font-size: 16px;
-       margin-bottom: 1rem;
-   }
+/* El tamaño de los <p>. El margin-bottom es vital para el diseño de la página, subirlo un poco más dejaría grandes espacios entre parrafos y bajarlo pegaría demasiado el texto.*/
+.texto p {
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
 
-   /* Cada imagen del libro con su texto es un article, por lo que toco aqui el background color y los padding */
-   article {
-       position: relative;
-       background: #ffffff;
-       padding-bottom: 20px;
-       padding-top: 10px;
-       margin-left: 3%;
-   }
+/* Cada imagen del libro con su texto es un article, por lo que toco aqui el background color y los padding */
+article {
+    position: relative;
+    background: #ffffff;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-left: 3%;
+}
 
-   /* El flexbox para los contenedores de cada article y lo que permite que la imagen y el texto estén al lado y centrados. */
-   .contenedor {
-       display: flex;
-       justify-content: center;
-   }
+/* El flexbox para los contenedores de cada article y lo que permite que la imagen y el texto estén al lado y centrados. */
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
 
-   /* El flexbox para las imagenes */
-   .portada {
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       padding-top: 1rem;
+/* El flexbox para las imagenes */
+.portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;
 
-   }
+}
 
-   /* El flexbox para las cajas de texto. He considerado que el vidth ideal es de 30vw. */
-   .texto {
-       margin-left: 3%;
-       margin-right: 3%;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       width: 30vw;
-   }
+/* El flexbox para las cajas de texto. He considerado que el vidth ideal es de 30vw. */
+.texto {
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vw;
+}
 
-   /* INICIO CSS DE LOS DISTINTOS BOTONES */
+/* INICIO CSS DE LOS DISTINTOS BOTONES */
 
-   /* Botón de navegación dentro del banner.em usa el font-size del botón */
-   .navegacion .indice {
-       position: static;
-       /* usamos static para que no se mueva */
-       background-color: #cbdfec;
-       /* color de fondo */
-       font-family: monospace;
-       /* usamos la fuente que queremos */
-       padding: 0.6em 1.3em;
-       /* espaciado */
-       font-weight: 900;
-       /* grosor de la fuente que vamos a usar */
-       font-size: 18px;
-       /* tamaño de la fuente que vamos a usar */
-       border: 3px solid black;
-       /* tamaño y estilo del borde */
-       border-radius: 0.4em;
-       /* redondea las esquinas  */
-       box-shadow: 0.1em 0.1em;
-       /* sombra de la caja */
-   }
+/* Botón de navegación dentro del banner.em usa el font-size del botón */
+.navegacion .indice {
+    position: static;
+    /* usamos static para que no se mueva */
+    background-color: #cbdfec;
+    /* color de fondo */
+    font-family: monospace;
+    /* usamos la fuente que queremos */
+    padding: 0.6em 1.3em;
+    /* espaciado */
+    font-weight: 900;
+    /* grosor de la fuente que vamos a usar */
+    font-size: 18px;
+    /* tamaño de la fuente que vamos a usar */
+    border: 3px solid black;
+    /* tamaño y estilo del borde */
+    border-radius: 0.4em;
+    /* redondea las esquinas  */
+    box-shadow: 0.1em 0.1em;
+    /* sombra de la caja */
+}
 
-   /* como interactua el botón navegación al dejar el cursor encima, en este caso hacemos que se mueva y tenga algo de sombra. 
+/* como interactua el botón navegación al dejar el cursor encima, en este caso hacemos que se mueva y tenga algo de sombra. 
       em usa el font-size del botón */
-   .indice:hover {
-       transform: translate(-0.05em, -0.05em);
-       /* recoloca en el eje horizontal y/o vertical. */
-       box-shadow: 0.15em 0.15em;
-       /* sombra de la caja */
-   }
+.indice:hover {
+    transform: translate(-0.05em, -0.05em);
+    /* recoloca en el eje horizontal y/o vertical. */
+    box-shadow: 0.15em 0.15em;
+    /* sombra de la caja */
+}
 
-   /* como interactua el botón navegación al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. 
+/* como interactua el botón navegación al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. 
       em usa el font-size del botón */
-   .indice:active {
-       transform: translate(0.05em, 0.05em);
-       /* recoloca en el eje horizontal y/o vertical. */
-       box-shadow: 0.05em 0.05em;
-       /* sombra de la caja */
-   }
+.indice:active {
+    transform: translate(0.05em, 0.05em);
+    /* recoloca en el eje horizontal y/o vertical. */
+    box-shadow: 0.05em 0.05em;
+    /* sombra de la caja */
+}
 
-   /* Botón de libros que dan susto dentro del banner.em usa el font-size del botón */
-   .librosmal {
-       position: static;
-       /* usamos static para que no se muevan */
-       background-color: #cbdfec;
-       /* color de fondo */
-       font-family: monospace;
-       /* usamos la fuente que queremos */
-       padding: 0.6em 1.3em;
-       /* espaciado */
-       font-weight: 900;
-       /* grosor de la fuente que vamos a usar */
-       font-size: 18px;
-       /* tamaño de la fuente que vamos a usar */
-       border: 3px solid black;
-       /* tamaño y estilo del borde */
-       border-radius: 0.4em;
-       /* redondea las esquinas  */
-       box-shadow: 0.1em 0.1em;
-       /* sombra de la caja */
-   }
+/* Botón de libros que dan susto dentro del banner.em usa el font-size del botón */
+.librosmal {
+    position: static;
+    /* usamos static para que no se muevan */
+    background-color: #cbdfec;
+    /* color de fondo */
+    font-family: monospace;
+    /* usamos la fuente que queremos */
+    padding: 0.6em 1.3em;
+    /* espaciado */
+    font-weight: 900;
+    /* grosor de la fuente que vamos a usar */
+    font-size: 18px;
+    /* tamaño de la fuente que vamos a usar */
+    border: 3px solid black;
+    /* tamaño y estilo del borde */
+    border-radius: 0.4em;
+    /* redondea las esquinas  */
+    box-shadow: 0.1em 0.1em;
+    /* sombra de la caja */
+}
 
-   /* como interactua el botón libros que dan susto al dejar el cursor encima, en este caso hacemos que se mueva y tenga algo de sombra. 
+/* como interactua el botón libros que dan susto al dejar el cursor encima, en este caso hacemos que se mueva y tenga algo de sombra. 
       em usa el font-size del botón */
-   .librosmal:hover {
-       transform: translate(-0.05em, -0.05em);
-       /* recoloca en el eje horizontal y/o vertical. */
-       box-shadow: 0.15em 0.15em;
-       /* sombra de la caja */
-   }
+.librosmal:hover {
+    transform: translate(-0.05em, -0.05em);
+    /* recoloca en el eje horizontal y/o vertical. */
+    box-shadow: 0.15em 0.15em;
+    /* sombra de la caja */
+}
 
-   /* como interactua el botón libros que dan susto al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. 
+/* como interactua el botón libros que dan susto al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. 
       em usa el font-size del botón */
-   .librosmal:active {
-       transform: translate(0.05em, 0.05em);
-       /* recoloca en el eje horizontal y/o vertical. */
-       box-shadow: 0.05em 0.05em;
-       /* sombra de la caja */
-   }
+.librosmal:active {
+    transform: translate(0.05em, 0.05em);
+    /* recoloca en el eje horizontal y/o vertical. */
+    box-shadow: 0.05em 0.05em;
+    /* sombra de la caja */
+}
 
-   /* Botón para los libros en Amazon */
-   .libros-amazon {
-       position: static;
-       /* usamos static para que no se muevan */
-       background-color: #f1ab14e7;
-       /* color de fondo */
-       font-family: monospace;
-       /* usamos la fuente que queremos */
-       padding: 0.6em 1.3em;
-       /* espaciado */
-       font-weight: 900;
-       /* grosor de la fuente que vamos a usar */
-       font-size: 16px;
-       /* tamaño de la fuente que vamos a usar */
-       border: 3px solid black;
-       /* tamaño y estilo del borde */
-       border-radius: 0.4em;
-       /* redondea las esquinas  */
-       box-shadow: 0.1em 0.1em;
-       /* sombra de la caja */
-   }
+/* Botón para los libros en Amazon */
+.libros-amazon {
+    position: static;
+    /* usamos static para que no se muevan */
+    background-color: #f1ab14e7;
+    /* color de fondo */
+    font-family: monospace;
+    /* usamos la fuente que queremos */
+    padding: 0.6em 1.3em;
+    /* espaciado */
+    font-weight: 900;
+    /* grosor de la fuente que vamos a usar */
+    font-size: 16px;
+    /* tamaño de la fuente que vamos a usar */
+    border: 3px solid black;
+    /* tamaño y estilo del borde */
+    border-radius: 0.4em;
+    /* redondea las esquinas  */
+    box-shadow: 0.1em 0.1em;
+    /* sombra de la caja */
+}
 
-   /* como interactua el botón libros al dejar el cursor encima, en este caso hacemos que se mueva y tenga algo de sombra. 
+/* como interactua el botón libros al dejar el cursor encima, en este caso hacemos que se mueva y tenga algo de sombra. 
       em usa el font-size del botón */
-   .libros-amazon:hover {
-       transform: translate(-0.05em, -0.05em);
-       /* recoloca en el eje horizontal y/o vertical. */
-       box-shadow: 0.15em 0.15em;
-       /* sombra de la caja */
-   }
+.libros-amazon:hover {
+    transform: translate(-0.05em, -0.05em);
+    /* recoloca en el eje horizontal y/o vertical. */
+    box-shadow: 0.15em 0.15em;
+    /* sombra de la caja */
+}
 
-   /* como interactua el botón libros al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. 
+/* como interactua el botón libros al pulsar con el cursor encima, en este caso baja simulando que lo hemos pulsado y tenga algo de sombra. 
       em usa el font-size del botón */
-   .libros-amazon:active {
-       transform: translate(0.05em, 0.05em);
-       /* recoloca en el eje horizontal y/o vertical. */
-       box-shadow: 0.05em 0.05em;
-       /* sombra de la caja */
-   }
+.libros-amazon:active {
+    transform: translate(0.05em, 0.05em);
+    /* recoloca en el eje horizontal y/o vertical. */
+    box-shadow: 0.05em 0.05em;
+    /* sombra de la caja */
+}
 
-   /* color del texto de los links sin pulsar */
-   a:link {
-       color: #211199;
-   }
+/* color del texto de los links sin pulsar */
+a:link {
+    color: #211199;
+}
 
-   /* color del texto de los links ya pulsados */
-   a:visited {
-       color: #513979;
-   }
+/* color del texto de los links ya pulsados */
+a:visited {
+    color: #513979;
+}
 
-   /* color del texto de los links al dejar el cursor encima */
-   a:hover {
-       color: #ce580a
-   }
+/* color del texto de los links al dejar el cursor encima */
+a:hover {
+    color: #ce580a
+}
 
-   /* color del texto de los links justo al pulsarlos */
-   a:active {
-       color: #dd854a
-   }
+/* color del texto de los links justo al pulsarlos */
+a:active {
+    color: #dd854a
+}
 
-   /* FIN CSS DE LOS DISTINTOS BOTONES */
+/* FIN CSS DE LOS DISTINTOS BOTONES */
 
+/* @media PARA HACERLO RESPONSIVE EN DISPOSITIVOS DESDE 1280 HASTA 300 (MÓVIL) */
 
-   /* @media PARA HACERLO RESPONSIVE EN DISPOSITIVOS DESDE 1280 HASTA */
+@media screen and (max-width: 1280px) {
+    .texto {
+        width: 50%;
+    }
+}
 
-   @media screen and (max-width: 1280px) {
-       .texto {
-           width: 50%;
-       }
-   }
+@media screen and (max-width: 700px) {
 
-   @media screen and (max-width: 700px) {
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-       .contenedor {
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-       }
+    .texto {
+        width: auto;
+    }
 
-       .texto {
-           width: auto;
-       }
+    .imagen {
+        width: 90%;
+        height: 90%;
+    }
+}
 
-       .imagen {
-           width: 90%;
-           height: 90%;
-       }
-   }
+@media screen and (max-width: 600px) {
 
-   @media screen and (max-width: 600px) {
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-       .contenedor {
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-       }
+    .texto {
+        width: auto;
+    }
 
-       .texto {
-           width: auto;
-       }
+    .imagen {
+        width: 90%;
+        height: 90%;
+    }
+}
 
-       .imagen {
-           width: 90%;
-           height: 90%;
-       }
-   }
+@media screen and (max-width: 500px) {
 
-   @media screen and (max-width: 500px) {
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-       .contenedor {
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-       }
+    .texto {
+        width: 80%;
+    }
 
-       .texto {
-           width: 80%;
-       }
+    .imagen {
+        width: 90%;
+        height: 90%;
+    }
+}
 
-       .imagen {
-           width: 90%;
-           height: 90%;
-       }
-   }
+@media screen and (max-width: 400px) {
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-
-
-   @media screen and (max-width: 400px) {
-       .contenedor {
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-       }
-
-       .texto {
-           width: auto;
-       }
+    .texto {
+        width: auto;
+    }
 
 
-       .imagen {
-           width: 90%;
-           height: 90%;
-       }
+    .imagen {
+        width: 90%;
+        height: 90%;
+    }
+}
 
+@media screen and (max-width: 300px) {
 
-   }
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
+    .texto {
+        width: auto;
 
-   @media screen and (max-width: 300px) {
+    }
 
-       .contenedor {
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-       }
+    .imagen {
+        width: 90%;
+        height: 90%;
+    }
 
-       .texto {
-           width: auto;
-
-       }
-
-       .imagen {
-           width: 90%;
-           height: 90%;
-       }
-
-   }
+}

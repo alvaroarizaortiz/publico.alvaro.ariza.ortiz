@@ -255,8 +255,7 @@ a:active {
 
 /* FIN CSS DE LOS DISTINTOS BOTONES */
 
-
-/* @media PARA HACERLO RESPONSIVE EN DISPOSITIVOS DESDE 1280 HASTA */
+/* @media PARA HACERLO RESPONSIVE EN DISPOSITIVOS DESDE 1280 HASTA 300 (MÓVIL) */
 
 @media screen and (max-width: 1280px) {
     .texto {
@@ -318,8 +317,6 @@ a:active {
     }
 }
 
-
-
 @media screen and (max-width: 400px) {
     .contenedor {
         display: flex;
@@ -336,9 +333,7 @@ a:active {
         width: 90%;
         height: 90%;
     }
-
 }
-
 
 @media screen and (max-width: 300px) {
 
