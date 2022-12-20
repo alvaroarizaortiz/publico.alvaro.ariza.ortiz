@@ -1,55 +1,74 @@
-div:active,
-div:hover {
-    opacity: 1;
-    background-color: rgba(255, 255, 255, 0.15);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.p1 {
+    font-family: monospace;
+    font-style: italic;
+    color: rgb(255, 0, 0);
+    z-index: 2;
+    align-self: center;
+    text-shadow: 3px 3px goldenrod;
+    font-size: calc(2.2em + 0.8vw + 0.8vh);
+    font-weight: bold;
+    animation: 3s infinite alternate slidein;
+    margin-bottom: 30%;
+}
+
+.p2 {
+    font-family: monospace;
+    font-style: oblique;
+    color: rgb(0, 241, 80);
+    z-index: 2;
+    align-self: center;
+    text-shadow: 3px 3px goldenrod;
+    font-size: calc(2.0em + 0.8vw + 0.8vh);
+}
+
+.p3 {
+    font-family: monospace;
+    font-style: inherit;
+    color: rgb(255, 0, 0);
+    z-index: 2;
+    align-self: center;
+    text-shadow: 2px 2px rgb(212, 0, 255);
+    font-size: calc(1.2em + 0.8vw + 0.8vh);
 }
 
 div {
-
     position: absolute;
-    top: 0%;
-    left: 0%;
+    margin-left: 20%;
+    top: 0;
+    right: 0%;
     width: 100%;
     height: 100%;
     opacity: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    transition: all 1.5s ease;
-    -webkit-transition: all 1.5s ease;
-    background-color: transparent;
+    align-items: center;
+    vertical-align: middle;
+    background: transparent;
     z-index: 1;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-p {
-    text-align: center;
-    transition: all 1.5s ease;
-    -webkit-transition: all 1.5s ease;
-    background-color: transparent;
-    color: red;
-    text-shadow: 1px 1px goldenrod;
-    font-size: calc(1.2em + 1vw + 1vh);
-    font-weight: bold;
-    z-index: 2;
-    animation: glowing 2s linear infinite;
-
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+div:active,
+div:hover {
+    opacity: 1;
 }
 
 
-.postal {
+img {
     position: absolute;
     top: 0;
     left: 0;
@@ -57,29 +76,25 @@ p {
     height: 100%;
     object-fit: contain;
     transition: all 1.5s ease;
-    -webkit-transition: all 1.5s ease;
-    
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    z-index: 0;
 }
 
 .reno {
-    display:block;
-    position:relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-    height: 20%;
-    margin-top: 16%;
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    margin-top: 12%;
     
-
-
 }
 
-.reno:hover {
-    visibility: visible;
+@media all and(oritentation:landscape) {
+
+    img,
+    div {
+        width: 40vh;
+        margin-left: calc(50 vw-35vh);
+    }
+
 }
