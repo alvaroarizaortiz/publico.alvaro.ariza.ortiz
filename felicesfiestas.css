@@ -20,7 +20,7 @@ p {
     z-index: 2;
     text-align: center;
     text-shadow: 3px 3px rgb(154, 161, 57);
-    font-size: calc(2.5em + 0.8vw + 0.8vh);
+    font-size: calc(1.5em + 1vw + 1vh);
     font-weight: bold;
 
 }
@@ -28,24 +28,25 @@ p {
 p:nth-child(2) {
     color: rgb(255, 174, 0);
     text-shadow: 3px 3px rgb(238, 255, 0);
-    font-size: calc(2.5em + 0.8vw + 0.8vh);
+    font-size: calc(1.5em + 1vw + 1vh);
+    z-index: 2;
 }
 
 
 p:nth-child(3) {
-    color: rgb(238, 255, 0);
-    text-shadow: 3px 3px rgb(154, 161, 57);
-    font-size: calc(2.5em + 0.8vw + 0.8vh);
+    color: rgb(1, 114, 191);
+    text-shadow: 3px 3px rgb(68, 68, 66);
+    font-size: calc(1.5em + 1vw + 1vh);
+    z-index: 2;
 }
 
 div {
     position: absolute;
     margin-left: 20%;
-    top: 0;
+    top: 15%;
     right: 0%;
     width: 100%;
     height: 100%;
-    opacity: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,13 +54,7 @@ div {
     vertical-align: middle;
     background: transparent;
     z-index: 1;
-    margin-top: 20%;
-}
 
-div:active,
-div:hover {
-    opacity: 1;
-   
 }
 
 
@@ -72,16 +67,20 @@ img {
     object-fit: contain;
     transition: all 1.5s ease;
     z-index: 0;
+    
 }
 
 .reno {
-    position: relative;
-    display: block;
+    position: absolute;
     margin: auto;
-    align-items: center;
+    right: 0;
+    left: 0;
+    top: 25%;
     width: 40%;
-    height: 40%;
-    margin-top: 30%;
+    height: 30%;
+    z-index: 3;
+
+
 }
 
 @media all and(oritentation:landscape) {
