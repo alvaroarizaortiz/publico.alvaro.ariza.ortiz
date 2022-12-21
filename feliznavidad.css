@@ -115,9 +115,16 @@ que salgan las letras de felices fiestas.*/
 /* PASO 8. MEDIA QUERY */
 @media all and(orientation:landscape) {
 
+    /* Media query funciona aquí al voltear el movil a horizontal.*/
     img,
     div {
         width: 40vh;
-        margin-left: calc(50 vw-35vh);
+        margin-left: calc(50 vw - 35vh);
+    }
+
+    /* Media query no funciona aquí al voltear el movil a horizontal y no logro encontrar la razón. Te lo pregunté
+    y no logramos llegar a una solución.*/
+    p {
+        font-size: calc(0.2em + 0.5vw + 0.5vh);
     }
 }
